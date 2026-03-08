@@ -1,5 +1,6 @@
 ---
 description: "모바일 앱 AI 팀의 현재 상태, 충돌 위험, 바로 할 다음 액션을 보여줘요."
+argument-hint: "[확인할 라운드 / blocker / 충돌 의심 파일]"
 allowed-tools:
   - TaskList
   - TaskGet

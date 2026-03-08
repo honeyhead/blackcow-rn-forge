@@ -1,5 +1,6 @@
 ---
 description: "큰 모바일 앱 작업을 여러 AI로 병렬 운영해요. 시작 전에 owner와 충돌 범위를 잠가요."
+argument-hint: "[이번 라운드 목표 / 팀 분할 범위 / 충돌 금지 파일]"
 allowed-tools:
   - Agent
   - TeamCreate
