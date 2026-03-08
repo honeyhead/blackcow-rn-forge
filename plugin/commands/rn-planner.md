@@ -1,5 +1,6 @@
 ---
 description: "앱 아이디어를 Bare React Native 기준 PRD로 정리해요."
+argument-hint: "[앱 아이디어 / 타겟 사용자 / 수익화 방식]"
 allowed-tools:
   - WebSearch
   - WebFetch

@@ -1,5 +1,6 @@
 ---
 description: "ASO, 앱 분석, 리텐션, 수익화를 함께 설계해요."
+argument-hint: "[앱 카테고리 / 타겟 국가 / 수익화 방식]"
 allowed-tools:
   - WebSearch
   - WebFetch

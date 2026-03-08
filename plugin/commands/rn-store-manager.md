@@ -1,5 +1,6 @@
 ---
 description: "App Store / Play Store 메타데이터와 스크린샷 메시지를 정리해요."
+argument-hint: "[앱 설명 / 타겟 국가 / 핵심 포지셔닝]"
 allowed-tools:
   - Read
   - Write

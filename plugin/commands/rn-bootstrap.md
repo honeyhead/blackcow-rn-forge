@@ -1,5 +1,6 @@
 ---
 description: "Expo 없이 Bare React Native 프로젝트를 직접 구성해요."
+argument-hint: "[새 앱 이름 | 기존 프로젝트 구조 보강 요청]"
 allowed-tools:
   - Bash
   - Read

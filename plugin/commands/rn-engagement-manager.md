@@ -1,5 +1,6 @@
 ---
 description: "푸시, win-back, referral, paywall 실험을 운영 관점에서 정리해요."
+argument-hint: "[앱 카테고리 / 현재 퍼널 단계 / 핵심 리텐션 과제]"
 allowed-tools:
   - Read
   - Write
