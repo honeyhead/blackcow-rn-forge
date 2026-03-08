@@ -344,6 +344,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-architect` | 아키텍트 | 네비게이션, 상태, 오프라인, 배포 구조 설계 |
 | `/rn-designer` | 모바일 디자이너 | 디자인 시스템, 화면 패턴, 컴포넌트 구축 |
 
+대표 입력 예시:
+
+```text
+/rn-planner 반려견 산책 기록과 근처 산책 친구 매칭 앱
+/rn-architect 인증, 푸시, 오프라인 기록이 필요한 산책 앱 구조 설계
+```
+
 #### Quality / Compliance
 
 | 커맨드 | 역할 | 설명 |
@@ -352,6 +359,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-accessibility-guard` | 접근성 담당 | screen reader, focus, dynamic type, reduced motion 감리 |
 | `/rn-security-guard` | 보안 담당 | 모바일 앱 보안 점검 |
 | `/rn-privacy-manager` | 프라이버시 담당 | ATT, consent, data deletion, store disclosure 정리 |
+
+대표 입력 예시:
+
+```text
+/rn-ui-upgrade 온보딩과 결제 화면의 UX 문제를 점검하고 우선순위를 정리해줘
+/rn-security-guard 토큰 저장, WebView, 딥링크 보안 리스크를 감사해줘
+```
 
 #### Core Flows / Platform
 
@@ -362,6 +376,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-platform-manager` | 플랫폼 담당 | push, deep link, 권한, lifecycle 통합 설계 |
 | `/rn-offline-manager` | 동기화 담당 | offline-first, cache, sync queue, conflict 정책 설계 |
 | `/rn-media-manager` | 미디어 담당 | camera, gallery, upload, cache, background transfer 설계 |
+
+대표 입력 예시:
+
+```text
+/rn-auth-manager Supabase OAuth와 세션 복구가 있는 모바일 인증 흐름을 설계해줘
+/rn-offline-manager 오프라인 작성 후 재연결 동기화가 필요한 메모 앱 정책을 정리해줘
+```
 
 #### Growth / Store / Operations
 
@@ -375,6 +396,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-support-ops` | 지원 운영 담당 | support inbox, refund, review response, FAQ 운영 정리 |
 | `/rn-incident-manager` | 인시던트 담당 | sev 기준, rollback, comms, postmortem 운영 정리 |
 
+대표 입력 예시:
+
+```text
+/rn-growth-manager 미국/한국 타겟의 습관 앱 ASO와 리텐션 전략을 정리해줘
+/rn-support-ops 환불, 계정 복구, 리뷰 대응 운영 규칙을 정리해줘
+```
+
 #### Release / Testing
 
 | 커맨드 | 역할 | 설명 |
@@ -385,6 +413,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-rollout-manager` | 배포 운영 담당 | release channel, staged rollout, hotfix, rollback 전략 설계 |
 | `/rn-release-manager` | 릴리즈 매니저 | 출시 준비, QA, 스토어 제출 체크 |
 
+대표 입력 예시:
+
+```text
+/rn-test-lab 로그인, 결제, 딥링크가 있는 앱의 테스트 전략을 정리해줘
+/rn-rollout-manager staged rollout과 hotfix 기준을 정리해줘
+```
+
 #### Team / Automation
 
 | 커맨드 | 역할 | 설명 |
@@ -393,6 +428,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-team-status` | 팀 리더 비서 | 팀 상태, 충돌 위험, blocker 확인 |
 | `/rn-loop` | 반복 실행기 | 상태 확인, 반복 실행, 재개 |
 | `/rn-cancel-loop` | 루프 제어 | 실행 중인 루프 중단 |
+
+대표 입력 예시:
+
+```text
+/rn-team 이번 라운드 목표는 출시 준비 완료고 ios/Podfile과 navigation root는 충돌 금지
+/rn-team-status 이번 라운드 release blocker와 충돌 위험 파일을 확인해줘
+```
 
 ### 결과물은 어디에 쌓이나요?
 
