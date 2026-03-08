@@ -67,6 +67,8 @@ user-invocable: true
 - `docs/testing/device-lab-ops.md`
 - `docs/testing/a11y-regression-matrix.md`
 
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 device lab 문서를 읽고 바뀐 커버리지와 운영 규칙만 갱신해요.
+
 ## Step 6: 결과 요약
 
 항상 아래를 같이 정리해요:

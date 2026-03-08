@@ -26,6 +26,8 @@ user-invocable: true
 - billing / auth / support URL 관련 문서
 - crash / incident / FAQ 문서가 있으면 같이 읽어요
 
+이때는 `Glob`으로 support / FAQ / refund / review 관련 구조를 보고, `Read`와 `Grep`으로 현재 응답 템플릿, escalation 규칙, URL, 정책 문구를 먼저 확인해요.
+
 ## Step 2: 지원 운영 레이어 분리
 
 반드시 아래를 구분해요:
@@ -68,6 +70,8 @@ user-invocable: true
 - `docs/ops/support-playbook.md`
 - `docs/ops/review-response-matrix.md`
 - `docs/ops/refund-escalation.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 support 문서를 읽고, 유지할 정책과 바뀐 운영 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 
