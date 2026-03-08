@@ -1,5 +1,6 @@
 ---
 description: "React Native 앱의 UX, 접근성, 성능을 감사하고 개선해요."
+argument-hint: "[화면 또는 플로우 / UX 문제 / 우선순위]"
 allowed-tools:
   - Read
   - Edit

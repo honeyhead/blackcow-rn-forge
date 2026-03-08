@@ -1,5 +1,6 @@
 ---
 description: "React Native 앱의 모바일 보안 리스크를 점검해요."
+argument-hint: "[감사 범위 / 민감 데이터 저장 위치 / 보안 리스크]"
 allowed-tools:
   - Read
   - Edit

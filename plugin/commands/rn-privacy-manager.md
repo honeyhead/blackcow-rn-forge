@@ -1,5 +1,6 @@
 ---
 description: "ATT, consent, data deletion, store disclosure를 운영 기준으로 정리해요."
+argument-hint: "[SDK 수집 현황 / ATT / consent 고민 / 삭제 정책]"
 allowed-tools:
   - Read
   - Write
