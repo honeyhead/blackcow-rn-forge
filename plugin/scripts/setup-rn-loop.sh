@@ -60,6 +60,14 @@ EOF
   last_error_raw=$(state_value "last_error")
   last_stopped_at=$(state_value "last_stopped_at")
 
+  if [[ -n "$started_at" && "$started_at" != "null" ]]; then
+    started_at=$(unescape_yaml_double_quoted "$started_at")
+  fi
+
+  if [[ -n "$last_stopped_at" && "$last_stopped_at" != "null" ]]; then
+    last_stopped_at=$(unescape_yaml_double_quoted "$last_stopped_at")
+  fi
+
   if [[ -n "$completion_promise_raw" && "$completion_promise_raw" != "null" ]]; then
     completion_promise=$(unescape_yaml_double_quoted "$completion_promise_raw")
   else
@@ -294,6 +302,9 @@ if [[ "$RESUME" == "true" ]]; then
       RESUME_LAST_ERROR=$(unescape_yaml_double_quoted "$EXISTING_LAST_ERROR_RAW")
     fi
     RESUME_LAST_STOPPED_AT="$EXISTING_LAST_STOPPED_AT"
+    if [[ -n "$RESUME_LAST_STOPPED_AT" && "$RESUME_LAST_STOPPED_AT" != "null" ]]; then
+      RESUME_LAST_STOPPED_AT=$(unescape_yaml_double_quoted "$RESUME_LAST_STOPPED_AT")
+    fi
   fi
 
   if [[ "$MAX_ITERATIONS_SET" != "true" ]]; then
