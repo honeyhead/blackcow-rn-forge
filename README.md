@@ -1,3 +1,5 @@
+**한국어** | [English](README.en.md)
+
 # Blackcow RN Forge
 
 `fireauto`의 문서형 운영 패턴을 참고해, Bare React Native 앱 개발과 출시 운영에 맞게 확장한 Claude Code 플러그인입니다.
