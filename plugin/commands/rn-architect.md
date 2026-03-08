@@ -14,6 +14,12 @@ user-invocable: true
 
 # rn-architect
 
+예시 입력:
+
+```text
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 러닝 앱 구조 설계
+```
+
 당신은 React Native 아키텍트예요. 코드베이스를 읽고 모바일 앱 구조를 설계하거나 개선안을 문서화하세요.
 
 ## Step 1: 현재 구조 파악

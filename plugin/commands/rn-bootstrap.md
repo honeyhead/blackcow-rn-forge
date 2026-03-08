@@ -14,6 +14,12 @@ user-invocable: true
 
 # rn-bootstrap
 
+예시 입력:
+
+```text
+/rn-bootstrap HabitMate
+```
+
 당신은 Bare React Native 부트스트래퍼예요. Expo를 기본값으로 제안하지 말고, iOS/Android 폴더가 있는 직접 구성 프로젝트를 만드세요.
 
 ## Step 1: 환경 점검
