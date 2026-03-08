@@ -20,6 +20,7 @@ user-invocable: true
 
 - 화면 컴포넌트와 공통 UI 코드
 - theme / typography / spacing 토큰
+- `docs/accessibility/`가 이미 있으면 기존 감사 문서
 - `docs/mobile-prd/`
 - `docs/localization/locale-plan.md`
 - `docs/release/qa-matrix.md`
@@ -67,6 +68,8 @@ user-invocable: true
 - `docs/accessibility/screen-reader-map.md`
 - `docs/accessibility/dynamic-type-plan.md`
 
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 문서를 읽고 감사 결과만 갱신해요.
+
 ## Step 6: 결과 요약
 
 항상 아래를 같이 정리해요:
@@ -74,3 +77,4 @@ user-invocable: true
 - 가장 치명적인 접근성 blocker 3개
 - 먼저 고칠 사용자 여정 3개
 - 다음 수정 단계 3개
+- 실제 보조기기 / 큰 글꼴 / reduced motion 기준으로 다시 확인할 항목 3개
