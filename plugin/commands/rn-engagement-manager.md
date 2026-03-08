@@ -26,6 +26,8 @@ user-invocable: true
 
 없으면 현재 입력을 기준으로 새로 작성해요.
 
+이때는 `Glob`으로 growth / engagement / analytics 관련 구조를 보고, `Read`와 `Grep`으로 현재 trigger, push copy, referral, paywall revisit 이벤트를 먼저 확인해요.
+
 ## Step 2: 운영 레이어 구분
 
 반드시 아래를 구분해요:
@@ -68,6 +70,8 @@ user-invocable: true
 - `docs/growth/engagement-ops.md`
 - `docs/growth/push-calendar.md`
 - `docs/growth/referral-plan.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 engagement 문서를 읽고, 유지할 메시지 규칙과 바뀐 실험만 갱신해요.
 
 ## Step 6: 최종 요약
 

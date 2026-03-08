@@ -25,6 +25,8 @@ user-invocable: true
 - `docs/release/store-metadata.md`
 - `docs/ops/review-response-matrix.md`
 
+이때는 `Glob`으로 rating / review / growth 관련 구조를 보고, `Read`와 `Grep`으로 현재 prompt 타이밍, unhappy path, review response 기준, 관련 이벤트를 먼저 확인해요.
+
 ## Step 2: rating 운영 레이어 분리
 
 반드시 아래를 구분해요:
@@ -67,6 +69,8 @@ user-invocable: true
 - `docs/growth/rating-strategy.md`
 - `docs/ops/review-monitoring.md`
 - `docs/ops/rating-recovery.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 rating 문서를 읽고, 유지할 운영 규칙과 바뀐 recovery 액션만 갱신해요.
 
 ## Step 6: 결과 요약
 
