@@ -110,6 +110,11 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 4. /rn-designer
 ```
 
+주로 생기는 산출물:
+- `docs/mobile-prd/...`
+- `docs/mobile-bootstrap.md`
+- `docs/mobile-architecture.md`
+
 ### 이미 앱이 있고 구조를 정리하고 싶다면
 
 ```text
@@ -119,6 +124,11 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 4. /rn-privacy-manager
 ```
 
+주로 생기는 산출물:
+- `docs/mobile-architecture.md`
+- `MOBILE_SECURITY_AUDIT.md`
+- `docs/privacy/...`
+
 ### 출시 직전이라면
 
 ```text
@@ -127,6 +137,11 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 3. /rn-observability
 4. /rn-release-manager
 ```
+
+주로 생기는 산출물:
+- `docs/testing/...`
+- `docs/observability/...`
+- `docs/release/...`
 
 ### 출시 후 운영 단계라면
 
@@ -138,6 +153,10 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 5. /rn-incident-manager
 ```
 
+주로 생기는 산출물:
+- `docs/growth/...`
+- `docs/ops/...`
+
 ### 작업이 크고 길다면
 
 ```text
@@ -145,6 +164,10 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 2. /rn-team-status
 3. /rn-loop
 ```
+
+이럴 때 좋습니다:
+- 혼자 순서를 잡기 어려울 때
+- 큰 작업을 여러 단계로 끝까지 밀고 싶을 때
 
 ### Starter Kit이 꼭 필요한가요?
 
@@ -176,6 +199,12 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 - 기술 스택 방향
 - 출시/성장 전략 초안
 
+예시:
+
+```text
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
+```
+
 #### `/rn-bootstrap`
 
 Bare React Native 프로젝트의 기본 구조를 잡습니다.
@@ -190,6 +219,12 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 - 네이티브 기본 설정 체크
 - 다음에 실행할 커맨드
 
+예시:
+
+```text
+/rn-bootstrap
+```
+
 #### `/rn-architect`
 
 앱의 큰 구조를 설계합니다.
@@ -201,6 +236,12 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 - 모바일 아키텍처 문서
 - 데이터 흐름 정리
 - 리스크 포인트
+
+예시:
+
+```text
+/rn-architect
+```
 
 #### `/rn-release-manager`
 
@@ -215,6 +256,12 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 - `docs/release/store-checklist.md`
 - `docs/release/qa-matrix.md`
 
+예시:
+
+```text
+/rn-release-manager
+```
+
 #### `/rn-loop`
 
 프롬프트 하나를 던지고 완료 조건까지 반복 작업을 시킵니다.
@@ -223,6 +270,12 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 
 ```bash
 /rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
+
+짧게 시작하려면:
+
+```text
+/rn-loop 출시 준비 상태를 점검하고 부족한 문서를 채워줘
 ```
 
 ### 전체 커맨드
