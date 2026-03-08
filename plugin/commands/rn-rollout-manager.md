@@ -27,6 +27,8 @@ user-invocable: true
 - `docs/release/release-plan.md`
 - `docs/release/qa-matrix.md`
 
+이때는 `Glob`으로 release / flag / CI 관련 구조를 보고, `Read`와 `Grep`으로 현재 channel, rollout gate, rollback, hotfix 패턴을 먼저 확인해요.
+
 ## Step 2: 롤아웃 레이어 분리
 
 반드시 아래를 구분해요:
@@ -69,6 +71,8 @@ user-invocable: true
 - `docs/release/channel-strategy.md`
 - `docs/release/rollout-playbook.md`
 - `docs/release/hotfix-policy.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 rollout 문서를 읽고, 유지할 gate와 바뀐 운영 기준만 갱신해요.
 
 ## Step 6: 결과 요약
 

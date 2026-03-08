@@ -26,6 +26,8 @@ user-invocable: true
 - `docs/growth/analytics-plan.md`
 - `docs/release/release-plan.md`
 
+이때는 `Glob`으로 analytics / crash / performance 관련 구조를 보고, `Read`와 `Grep`으로 현재 이벤트 이름, release health, alert 기준, dashboard 목적을 먼저 확인해요.
+
 ## Step 2: 계측 레이어 분리
 
 반드시 아래를 구분해요:
@@ -72,6 +74,8 @@ platform 기능이 있으면 `rn-platform-manager`와 연결해서 permission pr
 - `docs/observability/crash-playbook.md`
 - `docs/observability/performance-budget.md`
 - `docs/observability/post-release-dashboard.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 observability 문서를 읽고, 유지할 지표와 바뀐 운영 기준만 갱신해요.
 
 ## Step 6: 결과 요약
 

@@ -70,6 +70,8 @@ platform 기능이 있으면 `rn-platform-manager`와 연결해서 push tap, cal
 - `docs/testing/e2e-matrix.md`
 - `docs/testing/manual-regression.md`
 
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 테스트 문서를 읽고 공백과 바뀐 기준만 업데이트해요.
+
 ## Step 6: 최종 보고
 
 항상 아래를 정리해요:
