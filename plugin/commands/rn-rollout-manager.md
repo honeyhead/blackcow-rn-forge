@@ -1,5 +1,6 @@
 ---
 description: "release channel, staged rollout, hotfix, rollback 운영 전략을 정리해요."
+argument-hint: "[배포 단계 / rollout gate / hotfix/rollback 고민]"
 allowed-tools:
   - Read
   - Write

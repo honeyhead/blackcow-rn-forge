@@ -1,5 +1,6 @@
 ---
 description: "sev 기준, triage, rollback, comms, postmortem 운영을 정리해요."
+argument-hint: "[주요 장애 시나리오 / sev 기준 / rollback 고민]"
 allowed-tools:
   - Read
   - Write

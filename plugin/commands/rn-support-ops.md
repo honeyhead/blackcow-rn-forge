@@ -1,5 +1,6 @@
 ---
 description: "support inbox, refund, review response, FAQ 운영을 정리해요."
+argument-hint: "[주요 문의 유형 / support SLA / refund 정책]"
 allowed-tools:
   - Read
   - Write
