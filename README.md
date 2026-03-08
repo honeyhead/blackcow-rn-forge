@@ -1,10 +1,28 @@
 # Blackcow RN Forge
 
+<p>
+  <a href="https://github.com/honeyhead/blackcow-rn-forge/stargazers"><img src="https://img.shields.io/github/stars/honeyhead/blackcow-rn-forge?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/honeyhead/blackcow-rn-forge/blob/main/LICENSE"><img src="https://img.shields.io/github/license/honeyhead/blackcow-rn-forge" alt="License" /></a>
+  <a href="https://github.com/honeyhead/blackcow-rn-forge"><img src="https://img.shields.io/github/last-commit/honeyhead/blackcow-rn-forge" alt="Last Commit" /></a>
+</p>
+
 Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하는 과정을 Claude Code 안에서 command 중심으로 정리하는 플러그인입니다.
 
 `fireauto`의 문서형 운영 패턴을 참고했지만, 웹 SaaS 대신 모바일 앱 개발과 출시 운영에 맞게 다시 설계했습니다.
 
 [시작하기](#시작하기) · [기능 가이드](#기능-가이드) · [상세 설명](#상세-설명) · [FAQ](#faq)
+
+---
+
+## Quick Start
+
+```bash
+/plugin marketplace add honeyhead/blackcow-rn-forge
+/plugin install blackcow-rn-forge@blackcow-rn-forge
+/rn-planner
+```
+
+설치 후 무엇부터 해야 할지 모르겠으면 `/rn-planner` 또는 `/rn-loop`부터 시작하면 됩니다.
 
 ---
 
