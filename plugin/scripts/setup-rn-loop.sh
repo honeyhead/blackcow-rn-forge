@@ -269,6 +269,7 @@ mkdir -p .claude
 CURRENT_ITERATION=0
 NEXT_ITERATION=1
 CURRENT_ITERATION_RAW=""
+SESSION_ID_TO_WRITE="${CLAUDE_CODE_SESSION_ID:-}"
 
 if is_active_loop; then
   CURRENT_ITERATION_RAW=$(state_value "iteration")
@@ -280,6 +281,7 @@ fi
 
 if [[ "$RESUME" == "true" ]]; then
   EXISTING_ACTIVE_VALUE=""
+  EXISTING_SESSION_ID=""
 
   if [[ ! -f "$STATE_FILE" ]]; then
     echo "이어갈 루프 상태 파일이 없어요: $STATE_FILE" >&2
@@ -294,6 +296,7 @@ if [[ "$RESUME" == "true" ]]; then
   NEXT_ITERATION=$((CURRENT_ITERATION + 1))
 
   EXISTING_ACTIVE_VALUE=$(state_value "active")
+  EXISTING_SESSION_ID=$(state_value "session_id")
   if [[ "$EXISTING_ACTIVE_VALUE" != "true" ]]; then
     RESUME_FROM_INACTIVE=true
     EXISTING_LAST_ERROR_RAW=$(state_value "last_error")
@@ -324,6 +327,10 @@ if [[ "$RESUME" == "true" ]]; then
   STARTED_AT=$(state_value "started_at")
   if [[ -z "$STARTED_AT" ]]; then
     STARTED_AT="\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\""
+  fi
+
+  if [[ -z "$SESSION_ID_TO_WRITE" && -n "$EXISTING_SESSION_ID" ]]; then
+    SESSION_ID_TO_WRITE="$EXISTING_SESSION_ID"
   fi
 else
   if is_active_loop; then
@@ -357,7 +364,7 @@ cat > "$STATE_FILE" <<EOF
 ---
 active: true
 iteration: $NEXT_ITERATION
-session_id: ${CLAUDE_CODE_SESSION_ID:-}
+session_id: $SESSION_ID_TO_WRITE
 max_iterations: $MAX_ITERATIONS
 completion_promise: $COMPLETION_PROMISE_YAML
 started_at: $STARTED_AT
