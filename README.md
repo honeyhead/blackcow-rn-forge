@@ -95,14 +95,13 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 #### 새 앱을 이제 시작한다면
 
 ```text
-1. RN CLI로 Bare React Native 앱 생성
-2. /rn-planner
-3. /rn-bootstrap
-4. /rn-architect
-5. /rn-designer
+1. /rn-planner
+2. /rn-bootstrap
+3. /rn-architect
+4. /rn-designer
 ```
 
-`/rn-bootstrap`은 Expo 대신 Bare React Native 기준으로 환경, 기본 의존성, 폴더 구조, 네이티브 설정을 정리합니다.
+`/rn-bootstrap`은 필요하면 새 Bare React Native 앱 생성까지 포함해서, 환경, 기본 의존성, 폴더 구조, 네이티브 설정을 정리합니다.
 
 #### 이미 RN 프로젝트가 있다면
 
@@ -195,7 +194,7 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 
 정리하면:
 - 이미 프로젝트가 있으면 바로 써도 됩니다
-- 새 프로젝트면 RN CLI로 Bare RN 앱을 만든 뒤 `/rn-bootstrap`부터 시작하면 됩니다
+- 새 프로젝트면 `/rn-planner` 다음 `/rn-bootstrap`부터 시작하면 됩니다
 
 ---
 
@@ -392,7 +391,9 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 
 ### 프로젝트가 아직 없는데 바로 쓸 수 있나요?
 
-네. 다만 이 플러그인은 Bare React Native 기준이므로, RN CLI로 프로젝트를 만든 뒤 `/rn-bootstrap`부터 시작하는 게 가장 자연스럽습니다.
+네. 프로젝트가 없어도 `/rn-planner`부터 시작할 수 있습니다.
+
+그 다음 `/rn-bootstrap`이 새 Bare React Native 앱 생성 또는 기존 구조 보강을 맡습니다.
 
 ### 이미 앱이 있는데 `/rn-bootstrap`이 꼭 필요한가요?
 
