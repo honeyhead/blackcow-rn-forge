@@ -26,5 +26,9 @@ user-invocable: true
 - `--status`, `--cancel`, `--resume` 은 함께 섞지 않고 한 번에 하나만 써요.
 - active 루프가 이미 있으면 새로 덮어쓰지 않아요. 이때는 `--resume` 으로 이어가거나 `/rn-cancel-loop` 로 중단해요.
 - `--resume` 으로 재개하면 iteration 이 다음 회차로 증가하고 상태 파일을 같은 경로에서 갱신해요. 훅 오류로 inactive 상태가 된 루프도 명시적으로 이어갈 수 있어요.
+- `--max-iterations` 를 주면 해당 회차에 도달한 뒤 stop hook 이 상태 파일을 정리하고 루프를 종료해요.
+- `--completion-promise` 는 상태 파일에 완료 조건으로 저장만 해요. 시작/재개 시점에는 `<promise>...</promise>` 를 출력하지 않아요.
 - 완료 조건이 있으면 실제로 충족됐을 때만 `<promise>...</promise>` 를 출력해요.
+- loop 훅이 정상 동작하려면 `jq` 가 필요해요. 없으면 루프가 inactive 로 전환되고 `/rn-loop --status` 또는 `/rn-loop --resume` 으로 복구 흐름을 확인하게 돼요.
+- 상태 파일은 `.claude/blackcow-rn-loop.local.md` 에 저장돼요.
 - RN 앱은 빌드, 런타임, 네이티브 설정까지 확인해야 완료로 간주해요.

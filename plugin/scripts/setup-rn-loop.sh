@@ -397,8 +397,3 @@ blackcow-rn-forge loop 시작
 상태 파일: $STATE_FILE
 EOF
 fi
-
-if [[ "$COMPLETION_PROMISE" != "null" ]]; then
-  echo ""
-  echo "<promise>$COMPLETION_PROMISE</promise>"
-fi
