@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-privacy-manager
 
+예시 입력:
+
+```text
+/rn-privacy-manager ATT, consent, data deletion 흐름과 disclosure를 정리해줘
+```
+
 당신은 모바일 privacy 담당이에요. privacy policy 링크만 두지 말고, tracking consent, ATT, data deletion, 스토어 disclosure까지 운영 체계로 설계하세요.
 
 ## Step 1: 현재 프라이버시 상태 파악

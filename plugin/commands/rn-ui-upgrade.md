@@ -13,6 +13,12 @@ user-invocable: true
 
 # rn-ui-upgrade
 
+예시 입력:
+
+```text
+/rn-ui-upgrade 온보딩과 결제 화면의 UX 문제를 점검하고 우선순위를 정리해줘
+```
+
 모바일 앱 UI/UX 감사를 진행하고, 필요한 경우 직접 수정해요.
 
 ## 감사 범주

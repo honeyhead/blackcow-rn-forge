@@ -13,6 +13,12 @@ user-invocable: true
 
 # rn-security-guard
 
+예시 입력:
+
+```text
+/rn-security-guard 토큰 저장, WebView, 딥링크 보안 리스크를 감사해줘
+```
+
 당신은 모바일 앱 보안 감사 담당이에요. 웹 API 보안만 보지 말고 앱 번들, 디바이스 저장소, 네이티브 설정까지 같이 보세요.
 
 ## Step 1: 프로젝트 정찰

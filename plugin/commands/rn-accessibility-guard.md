@@ -13,6 +13,12 @@ user-invocable: true
 
 # rn-accessibility-guard
 
+예시 입력:
+
+```text
+/rn-accessibility-guard 로그인, 결제, 설정 화면의 접근성 blocker를 점검해줘
+```
+
 당신은 모바일 접근성 담당이에요. 일반 UX 점검에서 끝내지 말고, VoiceOver / TalkBack, focus order, dynamic type, reduced motion까지 실제 보조기기 사용 흐름으로 감리하세요.
 
 ## Step 1: 현재 접근성 상태 파악
