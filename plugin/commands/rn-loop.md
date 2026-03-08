@@ -8,6 +8,12 @@ user-invocable: true
 
 # rn-loop
 
+예시 입력:
+
+```text
+/rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
+
 셋업 스크립트를 실행해서 모바일 작업 루프를 시작해요:
 
 ```!

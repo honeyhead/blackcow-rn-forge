@@ -7,6 +7,12 @@ user-invocable: true
 
 # rn-cancel-loop
 
+예시 입력:
+
+```text
+/rn-cancel-loop
+```
+
 셋업 스크립트를 통해 루프를 안전하게 중단해요:
 
 ```!

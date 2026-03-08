@@ -13,6 +13,12 @@ user-invocable: true
 
 # rn-team-status
 
+예시 입력:
+
+```text
+/rn-team-status 이번 라운드 release blocker와 충돌 위험 파일을 확인해줘
+```
+
 실행 중인 모바일 앱 팀의 상태를 확인해요.
 
 ## 보고 형식

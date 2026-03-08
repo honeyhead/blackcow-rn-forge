@@ -21,6 +21,12 @@ user-invocable: true
 
 # rn-team
 
+예시 입력:
+
+```text
+/rn-team 이번 라운드 목표는 출시 준비 완료고 ios/Podfile과 navigation root는 충돌 금지
+```
+
 Bare React Native 앱 작업을 여러 에이전트로 나눠서 병렬 처리해요.
 
 ## 기본 운영 방식
