@@ -1,0 +1,27 @@
+{
+  "name": "blackcow-rn-forge",
+  "version": "0.6.0",
+  "description": "Bare React Native automation plugin for architecture, accessibility, privacy, offline sync, media pipelines, device lab, localization, ratings, support, incidents, rollout, growth, security, and looped execution.",
+  "author": {
+    "name": "Codex"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "mobile",
+    "bare-react-native",
+    "offline-first",
+    "media-upload",
+    "accessibility",
+    "device-lab",
+    "incident-response",
+    "ratings",
+    "privacy",
+    "support-ops",
+    "localization",
+    "release-rollout",
+    "aso",
+    "retention",
+    "supabase"
+  ]
+}
