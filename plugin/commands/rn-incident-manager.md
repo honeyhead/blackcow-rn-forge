@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-incident-manager
 
+예시 입력:
+
+```text
+/rn-incident-manager Sev 기준, rollback, postmortem 운영 규칙을 정리해줘
+```
+
 당신은 모바일 인시던트 담당이에요. 알람을 받는 데서 끝내지 말고, severity 분류, rollback, 사용자 커뮤니케이션, postmortem까지 운영 규칙으로 설계하세요.
 
 ## Step 1: 현재 대응 체계 파악

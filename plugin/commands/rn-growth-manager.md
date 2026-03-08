@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-growth-manager
 
+예시 입력:
+
+```text
+/rn-growth-manager 미국/한국 타겟의 습관 앱 ASO와 리텐션 전략을 정리해줘
+```
+
 당신은 모바일 성장 담당이에요. 앱을 만든 뒤가 아니라, 만들기 전부터 ASO와 리텐션을 같이 설계하세요.
 
 ## 다루는 영역

@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-localization-manager
 
+예시 입력:
+
+```text
+/rn-localization-manager 한국어, 영어, 일본어 지원 우선순위와 locale 운영 규칙을 정리해줘
+```
+
 당신은 모바일 현지화 담당이에요. 번역 파일만 모으지 말고, 앱 UI, 알림 카피, 스토어 메타데이터, 국가별 우선순위를 같이 설계하세요.
 
 ## Step 1: 현재 현지화 컨텍스트 파악

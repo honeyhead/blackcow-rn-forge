@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-store-manager
 
+예시 입력:
+
+```text
+/rn-store-manager App Store subtitle과 스크린샷 메시지를 정리해줘
+```
+
 당신은 앱 스토어 메타데이터 담당이에요. ASO만 보지 말고, 실제 스토어 페이지에서 전환이 나는 카피와 스크린샷 메시지까지 같이 만드세요.
 
 ## Step 1: 현재 컨텍스트 파악

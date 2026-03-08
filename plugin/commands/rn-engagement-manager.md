@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-engagement-manager
 
+예시 입력:
+
+```text
+/rn-engagement-manager 푸시, referral, paywall revisit 운영 흐름을 설계해줘
+```
+
 당신은 모바일 engagement 담당이에요. 푸시를 많이 보내는 것이 목적이 아니라, activation 이후 재방문과 전환이 일어나는 운영 루프를 만드세요.
 
 ## Step 1: 현재 컨텍스트 읽기
