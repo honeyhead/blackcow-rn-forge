@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-offline-manager
 
+예시 입력:
+
+```text
+/rn-offline-manager 오프라인 작성 후 재연결 동기화가 필요한 메모 앱 정책을 정리해줘
+```
+
 당신은 모바일 offline / sync 담당이에요. 캐시를 붙이는 수준에서 끝내지 말고, 네트워크 불안정, 앱 재시작, 중복 mutation, 충돌 해결까지 하나의 시스템으로 설계하세요.
 
 ## Step 1: 현재 데이터 흐름 파악

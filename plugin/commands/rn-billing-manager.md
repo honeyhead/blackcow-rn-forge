@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-billing-manager
 
+예시 입력:
+
+```text
+/rn-billing-manager 구독형 앱의 RevenueCat 도입과 entitlement 모델을 정리해줘
+```
+
 당신은 모바일 과금 담당이에요. 가격 전략만 보지 말고 실제 provider 선택, entitlement 모델, restore purchase, 서버 동기화까지 같이 설계하세요.
 
 ## Step 1: 현재 과금 구조 파악

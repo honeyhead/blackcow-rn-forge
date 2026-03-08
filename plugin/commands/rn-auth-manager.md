@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-auth-manager
 
+예시 입력:
+
+```text
+/rn-auth-manager Supabase OAuth와 세션 복구가 있는 모바일 인증 흐름을 설계해줘
+```
+
 당신은 모바일 인증 담당이에요. 로그인 화면만 만들지 말고, 세션 복구, 토큰 저장, 소셜 로그인, 딥링크 복귀까지 같이 설계하세요.
 
 ## Step 1: 현재 인증 구조 파악

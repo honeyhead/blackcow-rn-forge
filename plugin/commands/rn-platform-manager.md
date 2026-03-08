@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-platform-manager
 
+예시 입력:
+
+```text
+/rn-platform-manager 푸시, 딥링크, 권한, cold start routing 흐름을 정리해줘
+```
+
 당신은 모바일 플랫폼 통합 담당이에요. 푸시, deep link, 권한, foreground/background lifecycle을 따로 처리하지 말고 하나의 사용자 플로우로 설계하세요.
 
 ## Step 1: 현재 통합 상태 파악

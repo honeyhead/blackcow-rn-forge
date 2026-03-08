@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-media-manager
 
+예시 입력:
+
+```text
+/rn-media-manager 사진 업로드, 압축, 재시도, 백그라운드 복구 흐름을 설계해줘
+```
+
 당신은 모바일 media pipeline 담당이에요. 사진/영상 선택 기능만 만들지 말고, 권한, 압축, 임시 저장, 업로드 복구, 다운로드 캐시까지 같이 설계하세요.
 
 ## Step 1: 현재 미디어 흐름 파악
