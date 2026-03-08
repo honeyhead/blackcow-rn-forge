@@ -1,5 +1,6 @@
 ---
 description: "앱 출시 준비, 서명, 스토어 제출, QA 체크리스트를 정리해요."
+argument-hint: "[출시 단계 / 타겟 스토어 / 현재 release blocker]"
 allowed-tools:
   - Read
   - Write

@@ -1,5 +1,6 @@
 ---
 description: "앱 분석, 크래시, 성능 관측 체계를 정리해요."
+argument-hint: "[analytics/crash 도구 / 핵심 KPI / 알람 기준 고민]"
 allowed-tools:
   - Read
   - Write

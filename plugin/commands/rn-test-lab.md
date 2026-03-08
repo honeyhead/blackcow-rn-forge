@@ -1,5 +1,6 @@
 ---
 description: "React Native 앱의 테스트 전략과 QA 검증 플로우를 정리해요."
+argument-hint: "[테스트 스택 / 가장 위험한 플로우 / 자동화 공백]"
 allowed-tools:
   - Read
   - Write
