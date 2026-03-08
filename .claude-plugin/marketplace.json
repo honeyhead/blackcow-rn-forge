@@ -4,7 +4,7 @@
     "name": "Codex"
   },
   "metadata": {
-    "description": "Bare React Native app automation plugin for Claude Code"
+    "description": "Claude Code plugin for Bare React Native architecture, release, quality, and growth ops"
   },
   "plugins": [
     {

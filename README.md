@@ -1,12 +1,29 @@
 # Blackcow RN Forge
 
-`fireauto`의 구조를 참고해서 만든 Bare React Native 전용 Claude Code 플러그인 초안입니다.
+`fireauto`의 문서형 운영 패턴을 참고해, Bare React Native 앱 개발과 출시 운영에 맞게 확장한 Claude Code 플러그인입니다.
+
+## 개요
+
+이 플러그인은 React Native 앱을 단순히 "코드 생성"하는 도구가 아니라, 아래 전 과정을 문서와 명령 중심으로 관리하는 작업 체계입니다.
+
+- 앱 기획과 구조 설계
+- 인증, 결제, 오프라인, 미디어 플로우 정의
+- 접근성, 보안, 프라이버시, QA 감사
+- ASO, 평점, 리텐션, 스토어 운영
+- 롤아웃, 릴리즈, 인시던트, 지원 운영
 
 핵심 방향:
 - 웹 SaaS 대신 iOS/Android 앱 개발 워크플로우에 맞춥니다.
 - Expo 기본값을 버리고 Bare React Native 기준으로 설계합니다.
 - 개발뿐 아니라 ASO, 리텐션, 분석, 수익화까지 모바일 운영 흐름을 포함합니다.
 - 기존 웹 중심 플러그인과 함께 설치해도 충돌이 덜 나도록 슬래시 커맨드는 `rn-` 접두사를 사용합니다.
+
+## 이런 경우에 적합합니다
+
+- Bare React Native 앱을 처음부터 구조적으로 시작하고 싶을 때
+- 이미 있는 RN 앱을 출시 가능한 수준으로 정리하고 싶을 때
+- QA, release, growth, privacy, support 문서가 흩어져 있을 때
+- Claude Code를 단순 코드 생성기가 아니라 역할 기반 운영 파트너처럼 쓰고 싶을 때
 
 ## 설치
 
@@ -20,6 +37,18 @@
 ```bash
 /plugin install blackcow-rn-forge@blackcow-rn-forge --scope project
 ```
+
+## 이 플러그인으로 할 수 있는 일
+
+- `/rn-planner`: 앱 아이디어를 모바일 PRD로 정리
+- `/rn-architect`: 네비게이션, 상태, 배포 구조 설계
+- `/rn-auth-manager`: auth, session restore, OAuth callback 설계
+- `/rn-offline-manager`: offline-first, cache, sync queue 정책 설계
+- `/rn-release-manager`: 출시 준비, QA, 스토어 제출 체크
+- `/rn-growth-manager`: ASO, analytics, retention, monetization 계획 수립
+- `/rn-incident-manager`: rollback, incident, postmortem 운영 정리
+
+즉, "무엇을 만들지"부터 "어떻게 출시하고 운영할지"까지 현재 프로젝트 문맥에 맞춰 문서와 실행 계획을 만들 수 있습니다.
 
 ## 커맨드
 
