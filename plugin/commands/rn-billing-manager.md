@@ -1,5 +1,6 @@
 ---
 description: "구독, IAP, RevenueCat/직접 구현, paywall 연동 전략을 정리해요."
+argument-hint: "[과금 모델 / provider 후보 / paywall 고민]"
 allowed-tools:
   - Read
   - Write

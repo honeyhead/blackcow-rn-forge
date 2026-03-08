@@ -1,5 +1,6 @@
 ---
 description: "모바일 인증, 세션 복구, 소셜 로그인, 딥링크 인증 흐름을 설계해요."
+argument-hint: "[auth provider / 로그인 방식 / 세션 복구 고민]"
 allowed-tools:
   - Read
   - Write
