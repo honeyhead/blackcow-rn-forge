@@ -1,5 +1,6 @@
 ---
 description: "앱 i18n, 국가별 메타데이터, 현지화 운영 우선순위를 정리해요."
+argument-hint: "[타겟 국가 / 지원 locale / 현지화 우선순위]"
 allowed-tools:
   - Read
   - Write

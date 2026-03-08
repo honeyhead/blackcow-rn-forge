@@ -1,5 +1,6 @@
 ---
 description: "review prompt, rating recovery, store reputation 운영을 정리해요."
+argument-hint: "[review prompt 시점 / 평점 하락 문제 / recovery 목표]"
 allowed-tools:
   - Read
   - Write
