@@ -10,7 +10,7 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 
 `fireauto`의 문서형 운영 패턴을 참고했지만, 웹 SaaS 대신 모바일 앱 개발과 출시 운영에 맞게 다시 설계했습니다.
 
-[시작하기](#시작하기) · [기능 가이드](#기능-가이드) · [상세 설명](#상세-설명) · [FAQ](#faq)
+[시작하기](#시작하기) · [기능 가이드](#기능-가이드) · [상세 설명](#상세-설명) · [FAQ](#faq) · [최근 변경사항](CHANGELOG.md)
 
 ---
 
@@ -19,10 +19,22 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 ```bash
 /plugin marketplace add honeyhead/blackcow-rn-forge
 /plugin install blackcow-rn-forge@blackcow-rn-forge
-/rn-planner
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
 ```
 
 설치 후 무엇부터 해야 할지 모르겠으면 `/rn-planner` 또는 `/rn-loop`부터 시작하면 됩니다.
+
+최근 문서/명령 개선 내역은 `CHANGELOG.md`에서 빠르게 볼 수 있습니다.
+
+처음 입력은 이렇게 주면 바로 쓰기 쉽습니다:
+
+```text
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
+/rn-bootstrap HabitMate
+/rn-architect 인증, 푸시, 오프라인 저장이 필요한 습관 앱 구조 설계
+/rn-release-manager TestFlight 제출 전 QA matrix와 release blocker 점검
+/rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
 
 ---
 
@@ -89,6 +101,16 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 - 반복 작업 자동 진행
 
 까지는 바로 시작할 수 있습니다.
+
+추천 첫 입력 예시:
+
+```text
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
+/rn-bootstrap HabitMate
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 앱 구조 설계
+/rn-release-manager App Store 제출 전 체크리스트와 QA matrix 정리
+/rn-loop 출시 준비 상태를 점검하고 부족한 문서를 채워줘
+```
 
 ### 4. 신규 프로젝트 / 기존 프로젝트
 
@@ -185,6 +207,7 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 이럴 때 좋습니다:
 - 혼자 순서를 잡기 어려울 때
 - 큰 작업을 여러 단계로 끝까지 밀고 싶을 때
+- `/rn-team-status`로 충돌 위험과 blocker를 중간중간 확인하고 싶을 때
 
 ### Starter Kit이 꼭 필요한가요?
 
@@ -239,7 +262,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-bootstrap
+/rn-bootstrap HabitMate
 ```
 
 #### `/rn-architect`
@@ -257,7 +280,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-architect
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 러닝 앱 구조 설계
 ```
 
 #### `/rn-release-manager`
@@ -276,17 +299,34 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-release-manager
+/rn-release-manager TestFlight 제출 전 release blocker와 QA matrix 정리
 ```
 
 #### `/rn-loop`
 
 프롬프트 하나를 던지고 완료 조건까지 반복 작업을 시킵니다.
 
+- 진행 중 상태만 보려면 `--status`
+- active 또는 중단된 inactive 루프를 이어가려면 `--resume`
+- 루프를 멈추려면 `/rn-cancel-loop`
+- active 루프는 새 실행으로 조용히 덮어쓰지 않습니다
+
 예시:
 
 ```bash
 /rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
+
+상태만 확인하려면:
+
+```text
+/rn-loop --status
+```
+
+기존 active 루프나 훅 오류로 멈춘 inactive 루프를 이어가려면:
+
+```text
+/rn-loop --resume 다음 작업
 ```
 
 짧게 시작하려면:
@@ -302,9 +342,16 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | 커맨드 | 역할 | 설명 |
 |--------|------|------|
 | `/rn-planner` | 모바일 기획자 | 앱 아이디어를 모바일 PRD로 정리 |
-| `/rn-bootstrap` | 부트스트래퍼 | Bare React Native 프로젝트 초기 구성 |
+| `/rn-bootstrap` | 부트스트래퍼 | 새 Bare React Native 프로젝트 생성 또는 기존 구조 보강 |
 | `/rn-architect` | 아키텍트 | 네비게이션, 상태, 오프라인, 배포 구조 설계 |
 | `/rn-designer` | 모바일 디자이너 | 디자인 시스템, 화면 패턴, 컴포넌트 구축 |
+
+대표 입력 예시:
+
+```text
+/rn-planner 반려견 산책 기록과 근처 산책 친구 매칭 앱
+/rn-architect 인증, 푸시, 오프라인 기록이 필요한 산책 앱 구조 설계
+```
 
 #### Quality / Compliance
 
@@ -315,6 +362,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-security-guard` | 보안 담당 | 모바일 앱 보안 점검 |
 | `/rn-privacy-manager` | 프라이버시 담당 | ATT, consent, data deletion, store disclosure 정리 |
 
+대표 입력 예시:
+
+```text
+/rn-ui-upgrade 온보딩과 결제 화면의 UX 문제를 점검하고 우선순위를 정리해줘
+/rn-security-guard 토큰 저장, WebView, 딥링크 보안 리스크를 감사해줘
+```
+
 #### Core Flows / Platform
 
 | 커맨드 | 역할 | 설명 |
@@ -324,6 +378,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-platform-manager` | 플랫폼 담당 | push, deep link, 권한, lifecycle 통합 설계 |
 | `/rn-offline-manager` | 동기화 담당 | offline-first, cache, sync queue, conflict 정책 설계 |
 | `/rn-media-manager` | 미디어 담당 | camera, gallery, upload, cache, background transfer 설계 |
+
+대표 입력 예시:
+
+```text
+/rn-auth-manager Supabase OAuth와 세션 복구가 있는 모바일 인증 흐름을 설계해줘
+/rn-offline-manager 오프라인 작성 후 재연결 동기화가 필요한 메모 앱 정책을 정리해줘
+```
 
 #### Growth / Store / Operations
 
@@ -337,6 +398,13 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-support-ops` | 지원 운영 담당 | support inbox, refund, review response, FAQ 운영 정리 |
 | `/rn-incident-manager` | 인시던트 담당 | sev 기준, rollback, comms, postmortem 운영 정리 |
 
+대표 입력 예시:
+
+```text
+/rn-growth-manager 미국/한국 타겟의 습관 앱 ASO와 리텐션 전략을 정리해줘
+/rn-support-ops 환불, 계정 복구, 리뷰 대응 운영 규칙을 정리해줘
+```
+
 #### Release / Testing
 
 | 커맨드 | 역할 | 설명 |
@@ -347,14 +415,28 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | `/rn-rollout-manager` | 배포 운영 담당 | release channel, staged rollout, hotfix, rollback 전략 설계 |
 | `/rn-release-manager` | 릴리즈 매니저 | 출시 준비, QA, 스토어 제출 체크 |
 
+대표 입력 예시:
+
+```text
+/rn-test-lab 로그인, 결제, 딥링크가 있는 앱의 테스트 전략을 정리해줘
+/rn-rollout-manager staged rollout과 hotfix 기준을 정리해줘
+```
+
 #### Team / Automation
 
 | 커맨드 | 역할 | 설명 |
 |--------|------|------|
-| `/rn-team` | 팀 리더 | 멀티 에이전트 병렬 작업 |
-| `/rn-team-status` | 팀 리더 비서 | 팀 상태 확인 |
-| `/rn-loop` | 반복 실행기 | 완료 조건까지 반복 작업 |
+| `/rn-team` | 팀 리더 | 멀티 에이전트 병렬 작업과 owner 분리 |
+| `/rn-team-status` | 팀 리더 비서 | 팀 상태, 충돌 위험, blocker 확인 |
+| `/rn-loop` | 반복 실행기 | 상태 확인, 반복 실행, 재개 |
 | `/rn-cancel-loop` | 루프 제어 | 실행 중인 루프 중단 |
+
+대표 입력 예시:
+
+```text
+/rn-team 이번 라운드 목표는 출시 준비 완료고 ios/Podfile과 navigation root는 충돌 금지
+/rn-team-status 이번 라운드 release blocker와 충돌 위험 파일을 확인해줘
+```
 
 ### 결과물은 어디에 쌓이나요?
 
@@ -426,6 +508,8 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 ### 큰 작업을 한 번에 맡기고 싶어요
 
 `/rn-loop`를 먼저 써보세요.
+
+진행 중 상태는 `/rn-loop --status` 로 보고, 이어가려면 `--resume`, 멈추려면 `/rn-cancel-loop` 를 쓰면 됩니다.
 
 예:
 

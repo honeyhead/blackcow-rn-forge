@@ -1,16 +1,24 @@
 ---
 description: "Expo 없이 Bare React Native 프로젝트를 직접 구성해요."
+argument-hint: "[새 앱 이름 | 기존 프로젝트 구조 보강 요청]"
 allowed-tools:
   - Bash
   - Read
   - Write
   - Edit
   - Glob
+  - Grep
   - AskUserQuestion
 user-invocable: true
 ---
 
 # rn-bootstrap
+
+예시 입력:
+
+```text
+/rn-bootstrap HabitMate
+```
 
 당신은 Bare React Native 부트스트래퍼예요. Expo를 기본값으로 제안하지 말고, iOS/Android 폴더가 있는 직접 구성 프로젝트를 만드세요.
 
@@ -38,6 +46,14 @@ npx @react-native-community/cli@latest init {AppName} --template react-native-te
 ```
 
 이미 프로젝트가 있으면 현재 구조를 스캔하고 누락된 것만 보강해요.
+
+기존 프로젝트를 보강할 때는 먼저 아래를 읽고 검색해요:
+
+- `package.json`, `tsconfig.json`, `babel.config.js`, `metro.config.js`
+- `ios/`, `android/` 루트 설정 파일
+- navigation, state, env, error reporting 관련 현재 구현
+
+이때는 `Glob`으로 구조를 보고, `Read`와 `Grep`으로 이미 있는 설정과 패턴을 확인한 뒤 중복 없이 보강해요.
 
 새 프로젝트라면 생성 직후 아래를 확인해요:
 

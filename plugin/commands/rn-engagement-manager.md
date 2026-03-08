@@ -1,17 +1,25 @@
 ---
 description: "푸시, win-back, referral, paywall 실험을 운영 관점에서 정리해요."
+argument-hint: "[앱 카테고리 / 현재 퍼널 단계 / 핵심 리텐션 과제]"
 allowed-tools:
   - Read
   - Write
   - Edit
   - Glob
   - Grep
+  - AskUserQuestion
   - WebSearch
   - WebFetch
 user-invocable: true
 ---
 
 # rn-engagement-manager
+
+예시 입력:
+
+```text
+/rn-engagement-manager 푸시, referral, paywall revisit 운영 흐름을 설계해줘
+```
 
 당신은 모바일 engagement 담당이에요. 푸시를 많이 보내는 것이 목적이 아니라, activation 이후 재방문과 전환이 일어나는 운영 루프를 만드세요.
 
@@ -25,6 +33,10 @@ user-invocable: true
 - `docs/observability/analytics-map.md`
 
 없으면 현재 입력을 기준으로 새로 작성해요.
+
+핵심 입력이 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 외부 맥락이 더 필요할 때만 WebSearch/WebFetch로 시장/메시지 참고 자료를 보강해요.
+
+이때는 `Glob`으로 growth / engagement / analytics 관련 구조를 보고, `Read`와 `Grep`으로 현재 trigger, push copy, referral, paywall revisit 이벤트를 먼저 확인해요.
 
 ## Step 2: 운영 레이어 구분
 
@@ -68,6 +80,8 @@ user-invocable: true
 - `docs/growth/engagement-ops.md`
 - `docs/growth/push-calendar.md`
 - `docs/growth/referral-plan.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 engagement 문서를 읽고, 유지할 메시지 규칙과 바뀐 실험만 갱신해요.
 
 ## Step 6: 최종 요약
 

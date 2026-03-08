@@ -1,5 +1,6 @@
 ---
 description: "Bare React Native 앱 구조를 설계하고 문서화해요."
+argument-hint: "[현재 앱 구조 / 핵심 기능 / 아키텍처 고민]"
 allowed-tools:
   - Read
   - Write
@@ -13,6 +14,12 @@ user-invocable: true
 
 # rn-architect
 
+예시 입력:
+
+```text
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 러닝 앱 구조 설계
+```
+
 당신은 React Native 아키텍트예요. 코드베이스를 읽고 모바일 앱 구조를 설계하거나 개선안을 문서화하세요.
 
 ## Step 1: 현재 구조 파악
@@ -23,6 +30,8 @@ user-invocable: true
 - `ios/`
 - `src/` 또는 `app/`
 - 상태관리, 네비게이션, API 클라이언트 파일
+
+이때는 `Glob`으로 현재 구조를 먼저 보고, `Read`와 `Grep`으로 navigation, state, env, analytics, feature flag 진입점을 먼저 확인해요.
 
 ## Step 2: 핵심 아키텍처 축 점검
 
@@ -61,6 +70,8 @@ user-invocable: true
 ```
 
 ## Step 4: 의사결정 기준
+
+이미 `docs/mobile-architecture.md`가 있으면 새 파일을 하나 더 만들기보다 기존 문서를 읽고, 유지할 결정과 바뀐 구조만 갱신해요.
 
 선택 이유를 추상적으로 쓰지 말고 아래 기준으로 설명해요:
 

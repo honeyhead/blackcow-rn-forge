@@ -1,5 +1,6 @@
 ---
 description: "모바일 인증, 세션 복구, 소셜 로그인, 딥링크 인증 흐름을 설계해요."
+argument-hint: "[auth provider / 로그인 방식 / 세션 복구 고민]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-auth-manager
 
+예시 입력:
+
+```text
+/rn-auth-manager Supabase OAuth와 세션 복구가 있는 모바일 인증 흐름을 설계해줘
+```
+
 당신은 모바일 인증 담당이에요. 로그인 화면만 만들지 말고, 세션 복구, 토큰 저장, 소셜 로그인, 딥링크 복귀까지 같이 설계하세요.
 
 ## Step 1: 현재 인증 구조 파악
@@ -25,6 +32,8 @@ user-invocable: true
 - `ios/`, `android/` 의 URL scheme / deep link 설정
 - `docs/mobile-architecture.md`
 - `MOBILE_SECURITY_AUDIT.md` 가 있으면 같이 읽어요
+
+이때는 `Glob`으로 auth / session / deep link 관련 구조를 보고, `Read`와 `Grep`으로 현재 provider, token 저장, callback 처리 패턴을 먼저 확인해요.
 
 ## Step 2: 인증 레이어 분리
 
@@ -69,6 +78,8 @@ user-invocable: true
 - `docs/auth/mobile-auth-flow.md`
 - `docs/auth/session-strategy.md`
 - `docs/auth/oauth-callbacks.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 auth 문서를 읽고, 유지할 결정과 바뀐 결정만 갱신해요.
 
 ## Step 6: 최종 요약
 

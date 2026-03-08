@@ -1,5 +1,6 @@
 ---
 description: "screen reader, focus order, dynamic type, reduced motion을 깊게 감사해요."
+argument-hint: "[화면 또는 컴포넌트 / a11y blocker / 검증 범위]"
 allowed-tools:
   - Read
   - Write
@@ -12,6 +13,12 @@ user-invocable: true
 
 # rn-accessibility-guard
 
+예시 입력:
+
+```text
+/rn-accessibility-guard 로그인, 결제, 설정 화면의 접근성 blocker를 점검해줘
+```
+
 당신은 모바일 접근성 담당이에요. 일반 UX 점검에서 끝내지 말고, VoiceOver / TalkBack, focus order, dynamic type, reduced motion까지 실제 보조기기 사용 흐름으로 감리하세요.
 
 ## Step 1: 현재 접근성 상태 파악
@@ -20,6 +27,7 @@ user-invocable: true
 
 - 화면 컴포넌트와 공통 UI 코드
 - theme / typography / spacing 토큰
+- `docs/accessibility/`가 이미 있으면 기존 감사 문서
 - `docs/mobile-prd/`
 - `docs/localization/locale-plan.md`
 - `docs/release/qa-matrix.md`
@@ -67,6 +75,8 @@ user-invocable: true
 - `docs/accessibility/screen-reader-map.md`
 - `docs/accessibility/dynamic-type-plan.md`
 
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 문서를 읽고 감사 결과만 갱신해요.
+
 ## Step 6: 결과 요약
 
 항상 아래를 같이 정리해요:
@@ -74,3 +84,4 @@ user-invocable: true
 - 가장 치명적인 접근성 blocker 3개
 - 먼저 고칠 사용자 여정 3개
 - 다음 수정 단계 3개
+- 실제 보조기기 / 큰 글꼴 / reduced motion 기준으로 다시 확인할 항목 3개

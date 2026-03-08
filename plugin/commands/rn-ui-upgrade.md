@@ -1,5 +1,6 @@
 ---
 description: "React Native 앱의 UX, 접근성, 성능을 감사하고 개선해요."
+argument-hint: "[화면 또는 플로우 / UX 문제 / 우선순위]"
 allowed-tools:
   - Read
   - Edit
@@ -11,6 +12,12 @@ user-invocable: true
 ---
 
 # rn-ui-upgrade
+
+예시 입력:
+
+```text
+/rn-ui-upgrade 온보딩과 결제 화면의 UX 문제를 점검하고 우선순위를 정리해줘
+```
 
 모바일 앱 UI/UX 감사를 진행하고, 필요한 경우 직접 수정해요.
 
@@ -42,7 +49,13 @@ user-invocable: true
 - inline style 남발보다 재사용 스타일을 우선해요
 - 로딩 상태는 skeleton 또는 명확한 progress indicator를 제공해요
 
+## 검증 원칙
+
+- 수정한 화면은 가능하면 iOS / Android 기준 핵심 플로우를 다시 확인해요
+- 다크 모드, 큰 글꼴, reduced motion 영향이 있으면 함께 다시 봐요
+- 레이아웃만 고치지 말고 CTA 도달, 입력, 복귀 흐름까지 확인해요
+
 ## 결과
 
 수정 전에는 발견 수를 알려주고 범위를 정해요.
-수정 후에는 변경 파일, 우선순위별 수정 수, 남은 수동 검증 항목을 정리해요.
+수정 후에는 변경 파일, 우선순위별 수정 수, 실제 다시 확인한 화면/플로우, 남은 수동 검증 항목을 정리해요.

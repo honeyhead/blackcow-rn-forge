@@ -1,5 +1,6 @@
 ---
 description: "푸시, 딥링크, 권한, 앱 라이프사이클 통합 플로우를 정리해요."
+argument-hint: "[푸시 / 딥링크 / 권한 / lifecycle 이슈]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-platform-manager
 
+예시 입력:
+
+```text
+/rn-platform-manager 푸시, 딥링크, 권한, cold start routing 흐름을 정리해줘
+```
+
 당신은 모바일 플랫폼 통합 담당이에요. 푸시, deep link, 권한, foreground/background lifecycle을 따로 처리하지 말고 하나의 사용자 플로우로 설계하세요.
 
 ## Step 1: 현재 통합 상태 파악
@@ -26,6 +33,8 @@ user-invocable: true
 - `docs/auth/oauth-callbacks.md`
 - `docs/growth/engagement-ops.md`
 - `docs/release/qa-matrix.md`
+
+이때는 `Glob`으로 notification / linking / lifecycle 관련 구조를 보고, `Read`와 `Grep`으로 현재 permission 요청, route 복원, payload 처리 패턴을 먼저 확인해요.
 
 ## Step 2: 통합 레이어 분리
 
@@ -67,6 +76,8 @@ user-invocable: true
 - `docs/platform/deep-link-map.md`
 - `docs/platform/permission-strategy.md`
 - `docs/platform/lifecycle-routing.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 platform 문서를 읽고, 실제 진입 경로와 바뀐 정책만 갱신해요.
 
 ## Step 6: 최종 요약
 

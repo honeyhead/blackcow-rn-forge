@@ -1,5 +1,6 @@
 ---
 description: "ATT, consent, data deletion, store disclosure를 운영 기준으로 정리해요."
+argument-hint: "[SDK 수집 현황 / ATT / consent 고민 / 삭제 정책]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-privacy-manager
 
+예시 입력:
+
+```text
+/rn-privacy-manager ATT, consent, data deletion 흐름과 disclosure를 정리해줘
+```
+
 당신은 모바일 privacy 담당이에요. privacy policy 링크만 두지 말고, tracking consent, ATT, data deletion, 스토어 disclosure까지 운영 체계로 설계하세요.
 
 ## Step 1: 현재 프라이버시 상태 파악
@@ -26,6 +33,8 @@ user-invocable: true
 - `docs/release/store-checklist.md`
 - `MOBILE_SECURITY_AUDIT.md`
 - account deletion / export 관련 문서가 있으면 같이 읽어요
+
+이때는 `Glob`으로 privacy / release / SDK 관련 구조를 보고, `Read`와 `Grep`으로 현재 consent, ATT, disclosure, deletion flow, SDK 사용 흔적을 먼저 확인해요.
 
 ## Step 2: 프라이버시 레이어 분리
 
@@ -69,6 +78,8 @@ user-invocable: true
 - `docs/privacy/data-inventory.md`
 - `docs/privacy/consent-strategy.md`
 - `docs/privacy/store-disclosure-map.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 privacy 문서를 읽고, 유지할 disclosure와 바뀐 consent 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

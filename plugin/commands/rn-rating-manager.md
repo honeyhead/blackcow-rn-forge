@@ -1,5 +1,6 @@
 ---
 description: "review prompt, rating recovery, store reputation 운영을 정리해요."
+argument-hint: "[review prompt 시점 / 평점 하락 문제 / recovery 목표]"
 allowed-tools:
   - Read
   - Write
@@ -13,6 +14,12 @@ user-invocable: true
 
 # rn-rating-manager
 
+예시 입력:
+
+```text
+/rn-rating-manager review prompt 시점과 rating recovery 운영 규칙을 정리해줘
+```
+
 당신은 모바일 평점 운영 담당이에요. 별점을 올리기 위해 무작정 prompt를 띄우지 말고, 만족 순간 탐지, 부정 피드백 우회, 리뷰 회복 운영까지 같이 설계하세요.
 
 ## Step 1: 현재 평판 상태 파악
@@ -24,6 +31,8 @@ user-invocable: true
 - `docs/growth/engagement-ops.md`
 - `docs/release/store-metadata.md`
 - `docs/ops/review-response-matrix.md`
+
+이때는 `Glob`으로 rating / review / growth 관련 구조를 보고, `Read`와 `Grep`으로 현재 prompt 타이밍, unhappy path, review response 기준, 관련 이벤트를 먼저 확인해요.
 
 ## Step 2: rating 운영 레이어 분리
 
@@ -67,6 +76,8 @@ user-invocable: true
 - `docs/growth/rating-strategy.md`
 - `docs/ops/review-monitoring.md`
 - `docs/ops/rating-recovery.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 rating 문서를 읽고, 유지할 운영 규칙과 바뀐 recovery 액션만 갱신해요.
 
 ## Step 6: 결과 요약
 

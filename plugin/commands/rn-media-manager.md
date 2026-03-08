@@ -1,5 +1,6 @@
 ---
 description: "camera, gallery, upload, cache, background transfer 파이프라인을 정리해요."
+argument-hint: "[media 유형 / 업로드 흐름 / 용량·권한 제약]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-media-manager
 
+예시 입력:
+
+```text
+/rn-media-manager 사진 업로드, 압축, 재시도, 백그라운드 복구 흐름을 설계해줘
+```
+
 당신은 모바일 media pipeline 담당이에요. 사진/영상 선택 기능만 만들지 말고, 권한, 압축, 임시 저장, 업로드 복구, 다운로드 캐시까지 같이 설계하세요.
 
 ## Step 1: 현재 미디어 흐름 파악
@@ -26,6 +33,8 @@ user-invocable: true
 - `docs/platform/permission-strategy.md`
 - `docs/data/offline-strategy.md`
 - `docs/mobile-architecture.md`
+
+이때는 `Glob`으로 media / upload / storage 관련 구조를 보고, `Read`와 `Grep`으로 현재 permission, compression, retry, cache, signed URL 패턴을 먼저 확인해요.
 
 ## Step 2: 미디어 파이프라인 분리
 
@@ -70,6 +79,8 @@ user-invocable: true
 - `docs/media/media-pipeline.md`
 - `docs/media/upload-recovery.md`
 - `docs/media/asset-policy.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 media 문서를 읽고, 유지할 정책과 바뀐 파이프라인 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

@@ -1,5 +1,6 @@
 ---
 description: "support inbox, refund, review response, FAQ 운영을 정리해요."
+argument-hint: "[주요 문의 유형 / support SLA / refund 정책]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-support-ops
 
+예시 입력:
+
+```text
+/rn-support-ops 환불, 계정 복구, 리뷰 대응 운영 규칙을 정리해줘
+```
+
 당신은 모바일 지원 운영 담당이에요. 문의 채널을 열어두는 수준에서 끝내지 말고, 환불, 계정 복구, 스토어 리뷰 대응, FAQ까지 운영 체계로 정리하세요.
 
 ## Step 1: 현재 지원 운영 상태 파악
@@ -25,6 +32,8 @@ user-invocable: true
 - `docs/release/store-checklist.md`
 - billing / auth / support URL 관련 문서
 - crash / incident / FAQ 문서가 있으면 같이 읽어요
+
+이때는 `Glob`으로 support / FAQ / refund / review 관련 구조를 보고, `Read`와 `Grep`으로 현재 응답 템플릿, escalation 규칙, URL, 정책 문구를 먼저 확인해요.
 
 ## Step 2: 지원 운영 레이어 분리
 
@@ -68,6 +77,8 @@ user-invocable: true
 - `docs/ops/support-playbook.md`
 - `docs/ops/review-response-matrix.md`
 - `docs/ops/refund-escalation.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 support 문서를 읽고, 유지할 정책과 바뀐 운영 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

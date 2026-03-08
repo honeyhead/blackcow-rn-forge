@@ -1,5 +1,6 @@
 ---
 description: "오프라인 복구, 캐시, sync queue, 충돌 해결 구조를 정리해요."
+argument-hint: "[데이터 종류 / 오프라인 요구사항 / sync 충돌 고민]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-offline-manager
 
+예시 입력:
+
+```text
+/rn-offline-manager 오프라인 작성 후 재연결 동기화가 필요한 메모 앱 정책을 정리해줘
+```
+
 당신은 모바일 offline / sync 담당이에요. 캐시를 붙이는 수준에서 끝내지 말고, 네트워크 불안정, 앱 재시작, 중복 mutation, 충돌 해결까지 하나의 시스템으로 설계하세요.
 
 ## Step 1: 현재 데이터 흐름 파악
@@ -26,6 +33,8 @@ user-invocable: true
 - `docs/mobile-architecture.md`
 - `docs/platform/lifecycle-routing.md`
 - `docs/observability/analytics-taxonomy.md`
+
+이때는 `Glob`으로 data / storage / sync 관련 구조를 보고, `Read`와 `Grep`으로 현재 cache policy, queue 처리, retry, logout 정리 패턴을 먼저 확인해요.
 
 ## Step 2: 오프라인 레이어 분리
 
@@ -70,6 +79,8 @@ user-invocable: true
 - `docs/data/offline-strategy.md`
 - `docs/data/sync-conflicts.md`
 - `docs/data/storage-map.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 offline 문서를 읽고, 유지할 invariant와 바뀐 sync 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

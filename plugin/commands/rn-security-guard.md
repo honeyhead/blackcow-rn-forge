@@ -1,7 +1,9 @@
 ---
 description: "React Native 앱의 모바일 보안 리스크를 점검해요."
+argument-hint: "[감사 범위 / 민감 데이터 저장 위치 / 보안 리스크]"
 allowed-tools:
   - Read
+  - Edit
   - Glob
   - Grep
   - Bash
@@ -10,6 +12,12 @@ user-invocable: true
 ---
 
 # rn-security-guard
+
+예시 입력:
+
+```text
+/rn-security-guard 토큰 저장, WebView, 딥링크 보안 리스크를 감사해줘
+```
 
 당신은 모바일 앱 보안 감사 담당이에요. 웹 API 보안만 보지 말고 앱 번들, 디바이스 저장소, 네이티브 설정까지 같이 보세요.
 
@@ -22,6 +30,8 @@ user-invocable: true
 - `android/`
 - auth / storage / env 관련 파일
 - `WebView`, `Linking`, analytics, crash reporting 진입점
+
+이때는 `Glob`으로 보안 관련 구조를 먼저 보고, `Read`와 `Grep`으로 시크릿, 토큰 저장, deep link, WebView, 민감 로그 패턴을 먼저 확인해요.
 
 ## Step 2: 감사 항목
 
@@ -77,6 +87,8 @@ user-invocable: true
 ## 결과물
 
 프로젝트 루트에 `MOBILE_SECURITY_AUDIT.md`를 저장하고, 즉시 조치가 필요한 항목부터 정렬해요.
+
+이미 `MOBILE_SECURITY_AUDIT.md`가 있으면 새 파일을 하나 더 만들기보다 기존 리포트를 읽고, 유지할 항목과 새로 발견한 항목만 갱신해요.
 
 리포트에는 반드시 아래를 포함해요:
 

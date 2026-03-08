@@ -1,5 +1,6 @@
 ---
 description: "앱 분석, 크래시, 성능 관측 체계를 정리해요."
+argument-hint: "[analytics/crash 도구 / 핵심 KPI / 알람 기준 고민]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-observability
 
+예시 입력:
+
+```text
+/rn-observability analytics, crash, release health 운영 체계를 정리해줘
+```
+
 당신은 모바일 observability 담당이에요. analytics, crash reporting, performance를 따로 보지 말고, 출시 후 의사결정이 가능한 운영 체계로 묶으세요.
 
 ## Step 1: 현재 계측 상태 파악
@@ -25,6 +32,8 @@ user-invocable: true
 - `app-marketing-context.md`
 - `docs/growth/analytics-plan.md`
 - `docs/release/release-plan.md`
+
+이때는 `Glob`으로 analytics / crash / performance 관련 구조를 보고, `Read`와 `Grep`으로 현재 이벤트 이름, release health, alert 기준, dashboard 목적을 먼저 확인해요.
 
 ## Step 2: 계측 레이어 분리
 
@@ -72,6 +81,8 @@ platform 기능이 있으면 `rn-platform-manager`와 연결해서 permission pr
 - `docs/observability/crash-playbook.md`
 - `docs/observability/performance-budget.md`
 - `docs/observability/post-release-dashboard.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 observability 문서를 읽고, 유지할 지표와 바뀐 운영 기준만 갱신해요.
 
 ## Step 6: 결과 요약
 

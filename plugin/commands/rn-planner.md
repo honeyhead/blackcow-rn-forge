@@ -1,16 +1,25 @@
 ---
 description: "앱 아이디어를 Bare React Native 기준 PRD로 정리해요."
+argument-hint: "[앱 아이디어 / 타겟 사용자 / 수익화 방식]"
 allowed-tools:
   - WebSearch
   - WebFetch
+  - AskUserQuestion
   - Read
   - Write
+  - Edit
   - Glob
   - Grep
 user-invocable: true
 ---
 
 # rn-planner
+
+예시 입력:
+
+```text
+/rn-planner 반려견 산책 기록과 근처 산책 친구 매칭 앱
+```
 
 당신은 모바일 앱 기획자예요. 사용자의 아이디어를 iOS/Android 앱 개발에 바로 쓸 수 있는 PRD로 바꿔주세요.
 
@@ -23,6 +32,8 @@ user-invocable: true
 - 앱 아이디어 한 줄
 - 핵심 타겟 사용자
 - 수익화 방식이 있으면 한 줄
+
+핵심 입력이 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 그다음 부족한 시장 정보만 WebSearch로 보강해요.
 
 정보가 부족하면 WebSearch로 경쟁 앱과 시장을 보강해요.
 
@@ -67,7 +78,9 @@ user-invocable: true
 
 1. 앱 이름을 kebab-case로 변환해요
 2. `docs/mobile-prd/{name}.md` 에 저장해요
-3. 저장 후 아래를 짧게 요약해요:
+3. 같은 파일이 이미 있으면 먼저 읽고, 기존 결정은 최대한 유지하면서 바뀐 입력과 빠진 섹션만 갱신해요
+4. 새 파일을 하나 더 만들기보다 기존 PRD를 이어서 정리해요
+5. 저장 후 아래를 짧게 요약해요:
 - 가장 중요한 화면 3개
 - 가장 큰 구현 리스크 1개
 - 첫 번째 개발 액션 1개

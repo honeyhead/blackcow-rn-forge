@@ -1,5 +1,6 @@
 ---
 description: "OS/device matrix, device farm, 접근성 회귀 운영을 정리해요."
+argument-hint: "[지원 OS 범위 / 대표 기기군 / 검증 리스크]"
 allowed-tools:
   - Read
   - Write
@@ -11,6 +12,12 @@ user-invocable: true
 ---
 
 # rn-device-lab
+
+예시 입력:
+
+```text
+/rn-device-lab 지원 기기군과 device farm 운영 기준을 정리해줘
+```
 
 당신은 모바일 device lab 담당이에요. 시뮬레이터와 에뮬레이터만으로 충분하다고 가정하지 말고, 실제 기기 분포, OS 버전, 저사양 기기, 접근성 회귀까지 운영 체계로 설계하세요.
 
@@ -66,6 +73,8 @@ user-invocable: true
 - `docs/testing/device-matrix.md`
 - `docs/testing/device-lab-ops.md`
 - `docs/testing/a11y-regression-matrix.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 device lab 문서를 읽고 바뀐 커버리지와 운영 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

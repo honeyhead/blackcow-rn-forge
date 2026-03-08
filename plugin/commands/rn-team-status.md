@@ -1,17 +1,35 @@
 ---
-description: "모바일 앱 AI 팀의 현재 상태를 보여줘요."
+description: "모바일 앱 AI 팀의 현재 상태, 충돌 위험, 바로 할 다음 액션을 보여줘요."
+argument-hint: "[확인할 라운드 / blocker / 충돌 의심 파일]"
 allowed-tools:
   - TaskList
   - TaskGet
   - Read
   - Glob
+  - Grep
   - Bash
 user-invocable: true
 ---
 
 # rn-team-status
 
+예시 입력:
+
+```text
+/rn-team-status 이번 라운드 release blocker와 충돌 위험 파일을 확인해줘
+```
+
 실행 중인 모바일 앱 팀의 상태를 확인해요.
+
+## 보고 형식
+
+상태를 볼 때는 아래 순서로 바로 말해요:
+
+1. 전체 상태: green / yellow / red
+2. 진행 중 / 완료 / blocked 태스크 수
+3. 지금 당장 충돌 위험이 큰 파일과 owner
+4. release blocker 유무
+5. 바로 할 다음 액션 3개
 
 ## 확인 포인트
 
@@ -45,3 +63,9 @@ user-invocable: true
 - 지원 OS / 기기 범위가 안 정해졌는데 레이아웃 회귀가 늘어나는 경우
 - review prompt 실험은 있는데 부정 리뷰 복구 운영 문서가 없는 경우
 - analytics / ad SDK가 추가됐는데 privacy disclosure 문서가 비어 있는 경우
+
+## 상태 해석 가이드
+
+- green: owner 충돌이 없고 blocker 없이 진행 가능한 상태
+- yellow: 진행은 가능하지만 문서/계약/QA 공백이 있는 상태
+- red: 네이티브 충돌, release blocker, privacy blocker처럼 바로 멈춰야 하는 상태

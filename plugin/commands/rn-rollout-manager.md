@@ -1,5 +1,6 @@
 ---
 description: "release channel, staged rollout, hotfix, rollback 운영 전략을 정리해요."
+argument-hint: "[배포 단계 / rollout gate / hotfix/rollback 고민]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-rollout-manager
 
+예시 입력:
+
+```text
+/rn-rollout-manager staged rollout과 hotfix 기준을 정리해줘
+```
+
 당신은 모바일 배포 운영 담당이에요. 출시 버튼을 누르는 순간만 보지 말고, 환경 승격, 점진 배포, hotfix, rollback 기준까지 운영 체계로 설계하세요.
 
 ## Step 1: 현재 배포 체계 파악
@@ -26,6 +33,8 @@ user-invocable: true
 - feature flag / remote config 관련 코드
 - `docs/release/release-plan.md`
 - `docs/release/qa-matrix.md`
+
+이때는 `Glob`으로 release / flag / CI 관련 구조를 보고, `Read`와 `Grep`으로 현재 channel, rollout gate, rollback, hotfix 패턴을 먼저 확인해요.
 
 ## Step 2: 롤아웃 레이어 분리
 
@@ -69,6 +78,8 @@ user-invocable: true
 - `docs/release/channel-strategy.md`
 - `docs/release/rollout-playbook.md`
 - `docs/release/hotfix-policy.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 rollout 문서를 읽고, 유지할 gate와 바뀐 운영 기준만 갱신해요.
 
 ## Step 6: 결과 요약
 

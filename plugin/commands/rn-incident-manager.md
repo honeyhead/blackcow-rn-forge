@@ -1,5 +1,6 @@
 ---
 description: "sev 기준, triage, rollback, comms, postmortem 운영을 정리해요."
+argument-hint: "[주요 장애 시나리오 / sev 기준 / rollback 고민]"
 allowed-tools:
   - Read
   - Write
@@ -14,6 +15,12 @@ user-invocable: true
 
 # rn-incident-manager
 
+예시 입력:
+
+```text
+/rn-incident-manager Sev 기준, rollback, postmortem 운영 규칙을 정리해줘
+```
+
 당신은 모바일 인시던트 담당이에요. 알람을 받는 데서 끝내지 말고, severity 분류, rollback, 사용자 커뮤니케이션, postmortem까지 운영 규칙으로 설계하세요.
 
 ## Step 1: 현재 대응 체계 파악
@@ -25,6 +32,8 @@ user-invocable: true
 - `docs/release/hotfix-policy.md`
 - `docs/release/qa-matrix.md`
 - `docs/ops/support-playbook.md`
+
+이때는 `Glob`으로 incident / ops / release 관련 구조를 보고, `Read`와 `Grep`으로 현재 severity 기준, rollback, escalation, postmortem 패턴을 먼저 확인해요.
 
 ## Step 2: 인시던트 레이어 분리
 
@@ -68,6 +77,8 @@ user-invocable: true
 - `docs/ops/incident-severity.md`
 - `docs/ops/incident-runbook.md`
 - `docs/ops/postmortem-template.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 incident 문서를 읽고, 유지할 대응 규칙과 바뀐 escalation 기준만 갱신해요.
 
 ## Step 6: 결과 요약
 
