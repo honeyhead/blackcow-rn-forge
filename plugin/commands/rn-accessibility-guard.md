@@ -1,5 +1,6 @@
 ---
 description: "screen reader, focus order, dynamic type, reduced motion을 깊게 감사해요."
+argument-hint: "[화면 또는 컴포넌트 / a11y blocker / 검증 범위]"
 allowed-tools:
   - Read
   - Write

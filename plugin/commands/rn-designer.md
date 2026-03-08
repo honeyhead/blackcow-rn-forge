@@ -1,5 +1,6 @@
 ---
 description: "React Native 앱용 디자인 시스템과 화면 UI를 만들어요."
+argument-hint: "[build|theme|refactor / 대상 화면 / 디자인 목표]"
 allowed-tools:
   - Read
   - Edit

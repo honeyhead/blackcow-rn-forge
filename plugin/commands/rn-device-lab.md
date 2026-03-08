@@ -1,5 +1,6 @@
 ---
 description: "OS/device matrix, device farm, 접근성 회귀 운영을 정리해요."
+argument-hint: "[지원 OS 범위 / 대표 기기군 / 검증 리스크]"
 allowed-tools:
   - Read
   - Write
