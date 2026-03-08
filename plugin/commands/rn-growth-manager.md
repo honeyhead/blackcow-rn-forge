@@ -3,9 +3,12 @@ description: "ASO, 앱 분석, 리텐션, 수익화를 함께 설계해요."
 allowed-tools:
   - WebSearch
   - WebFetch
+  - AskUserQuestion
   - Read
   - Write
+  - Edit
   - Glob
+  - Grep
 user-invocable: true
 ---
 
@@ -38,6 +41,10 @@ user-invocable: true
 
 `app-marketing-context.md`가 있으면 먼저 읽어요.
 없으면 현재 입력을 바탕으로 새로 만들어요.
+
+이미 `docs/growth/`, `docs/observability/`, `docs/release/` 같은 문서가 있으면 `Glob`으로 구조를 보고, `Read`와 `Grep`으로 현재 이벤트 이름, KPI, store positioning, paywall 관련 표현을 먼저 확인해요.
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 파일을 읽고, 유지할 결정과 갱신할 결정만 나눠서 필요한 부분만 업데이트해요.
 
 이 파일에는 최소한 아래를 포함해요:
 

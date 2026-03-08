@@ -3,8 +3,10 @@ description: "앱 아이디어를 Bare React Native 기준 PRD로 정리해요."
 allowed-tools:
   - WebSearch
   - WebFetch
+  - AskUserQuestion
   - Read
   - Write
+  - Edit
   - Glob
   - Grep
 user-invocable: true
@@ -67,7 +69,9 @@ user-invocable: true
 
 1. 앱 이름을 kebab-case로 변환해요
 2. `docs/mobile-prd/{name}.md` 에 저장해요
-3. 저장 후 아래를 짧게 요약해요:
+3. 같은 파일이 이미 있으면 먼저 읽고, 기존 결정은 최대한 유지하면서 바뀐 입력과 빠진 섹션만 갱신해요
+4. 새 파일을 하나 더 만들기보다 기존 PRD를 이어서 정리해요
+5. 저장 후 아래를 짧게 요약해요:
 - 가장 중요한 화면 3개
 - 가장 큰 구현 리스크 1개
 - 첫 번째 개발 액션 1개
