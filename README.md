@@ -27,6 +27,23 @@
 
 ## 설치
 
+### GitHub 설치
+
+```bash
+/plugin marketplace add honeyhead/blackcow-rn-forge
+/plugin install blackcow-rn-forge@blackcow-rn-forge
+```
+
+프로젝트 범위로 설치하려면:
+
+```bash
+/plugin install blackcow-rn-forge@blackcow-rn-forge --scope project
+```
+
+### 로컬 개발 설치
+
+저장소를 직접 내려받아 테스트할 때:
+
 ```bash
 /plugin marketplace add ./blackcow-rn-forge
 /plugin install blackcow-rn-forge@blackcow-rn-forge
