@@ -1,7 +1,7 @@
 {
   "name": "blackcow-rn-forge",
   "owner": {
-    "name": "Codex"
+    "name": "honeyhead"
   },
   "metadata": {
     "description": "Claude Code plugin for Bare React Native architecture, release, quality, and growth ops"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "blackcow-rn-forge",
-      "version": "0.6.0",
+      "version": "0.6.9",
       "source": "./plugin",
       "description": "Claude Code plugin for Bare React Native architecture, accessibility, privacy, offline sync, media pipelines, device lab, localization, ratings, support, incidents, rollout, security, and growth ops"
     }
