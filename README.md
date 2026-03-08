@@ -19,10 +19,20 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 ```bash
 /plugin marketplace add honeyhead/blackcow-rn-forge
 /plugin install blackcow-rn-forge@blackcow-rn-forge
-/rn-planner
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
 ```
 
 설치 후 무엇부터 해야 할지 모르겠으면 `/rn-planner` 또는 `/rn-loop`부터 시작하면 됩니다.
+
+처음 입력은 이렇게 주면 바로 쓰기 쉽습니다:
+
+```text
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
+/rn-bootstrap HabitMate
+/rn-architect 인증, 푸시, 오프라인 저장이 필요한 습관 앱 구조 설계
+/rn-release-manager TestFlight 제출 전 QA matrix와 release blocker 점검
+/rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
 
 ---
 
@@ -89,6 +99,16 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 - 반복 작업 자동 진행
 
 까지는 바로 시작할 수 있습니다.
+
+추천 첫 입력 예시:
+
+```text
+/rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
+/rn-bootstrap HabitMate
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 앱 구조 설계
+/rn-release-manager App Store 제출 전 체크리스트와 QA matrix 정리
+/rn-loop 출시 준비 상태를 점검하고 부족한 문서를 채워줘
+```
 
 ### 4. 신규 프로젝트 / 기존 프로젝트
 
@@ -240,7 +260,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-bootstrap
+/rn-bootstrap HabitMate
 ```
 
 #### `/rn-architect`
@@ -258,7 +278,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-architect
+/rn-architect 인증, 결제, 오프라인 동기화가 필요한 러닝 앱 구조 설계
 ```
 
 #### `/rn-release-manager`
@@ -277,7 +297,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 예시:
 
 ```text
-/rn-release-manager
+/rn-release-manager TestFlight 제출 전 release blocker와 QA matrix 정리
 ```
 
 #### `/rn-loop`
