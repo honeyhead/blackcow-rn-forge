@@ -26,6 +26,8 @@ user-invocable: true
 - `docs/release/store-checklist.md`
 - analytics / paywall 관련 문서
 
+이때는 `Glob`으로 billing / paywall / entitlement 관련 구조를 보고, `Read`와 `Grep`으로 현재 purchase flow, receipt 처리, paywall copy, analytics 이벤트를 먼저 확인해요.
+
 ## Step 2: 과금 모델 분리
 
 반드시 아래를 구분해요:
@@ -70,6 +72,8 @@ user-invocable: true
 - `docs/billing/billing-architecture.md`
 - `docs/billing/entitlement-model.md`
 - `docs/billing/paywall-flow.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 billing 문서를 읽고, provider 결정과 검증 규칙만 필요한 만큼 갱신해요.
 
 ## Step 6: 최종 요약
 

@@ -26,6 +26,8 @@ user-invocable: true
 - `docs/mobile-architecture.md`
 - `MOBILE_SECURITY_AUDIT.md` 가 있으면 같이 읽어요
 
+이때는 `Glob`으로 auth / session / deep link 관련 구조를 보고, `Read`와 `Grep`으로 현재 provider, token 저장, callback 처리 패턴을 먼저 확인해요.
+
 ## Step 2: 인증 레이어 분리
 
 반드시 아래를 구분해요:
@@ -69,6 +71,8 @@ user-invocable: true
 - `docs/auth/mobile-auth-flow.md`
 - `docs/auth/session-strategy.md`
 - `docs/auth/oauth-callbacks.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 auth 문서를 읽고, 유지할 결정과 바뀐 결정만 갱신해요.
 
 ## Step 6: 최종 요약
 

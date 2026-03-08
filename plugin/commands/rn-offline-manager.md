@@ -27,6 +27,8 @@ user-invocable: true
 - `docs/platform/lifecycle-routing.md`
 - `docs/observability/analytics-taxonomy.md`
 
+이때는 `Glob`으로 data / storage / sync 관련 구조를 보고, `Read`와 `Grep`으로 현재 cache policy, queue 처리, retry, logout 정리 패턴을 먼저 확인해요.
+
 ## Step 2: 오프라인 레이어 분리
 
 반드시 아래를 구분해요:
@@ -70,6 +72,8 @@ user-invocable: true
 - `docs/data/offline-strategy.md`
 - `docs/data/sync-conflicts.md`
 - `docs/data/storage-map.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 offline 문서를 읽고, 유지할 invariant와 바뀐 sync 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

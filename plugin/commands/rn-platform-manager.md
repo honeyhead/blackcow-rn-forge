@@ -27,6 +27,8 @@ user-invocable: true
 - `docs/growth/engagement-ops.md`
 - `docs/release/qa-matrix.md`
 
+이때는 `Glob`으로 notification / linking / lifecycle 관련 구조를 보고, `Read`와 `Grep`으로 현재 permission 요청, route 복원, payload 처리 패턴을 먼저 확인해요.
+
 ## Step 2: 통합 레이어 분리
 
 반드시 아래를 구분해요:
@@ -67,6 +69,8 @@ user-invocable: true
 - `docs/platform/deep-link-map.md`
 - `docs/platform/permission-strategy.md`
 - `docs/platform/lifecycle-routing.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 platform 문서를 읽고, 실제 진입 경로와 바뀐 정책만 갱신해요.
 
 ## Step 6: 최종 요약
 
