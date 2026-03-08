@@ -2,7 +2,7 @@
 description: "완료 조건까지 반복 실행해요. --status로 확인하고, --resume으로 이어가고, --cancel로 명시적으로 중단해요."
 argument-hint: "--status | --cancel | [--resume] 할 일 [--max-iterations 횟수] [--completion-promise 완료조건]"
 allowed-tools: ["Bash(${CLAUDE_PLUGIN_ROOT}/scripts/setup-rn-loop.sh:*)"]
-hide-from-slash-command-tool: "true"
+hide-from-slash-command-tool: true
 user-invocable: true
 ---
 

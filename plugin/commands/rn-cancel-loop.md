@@ -1,7 +1,7 @@
 ---
 description: "실행 중인 RN 루프를 중단해요. 중단 전에는 /rn-loop --status로 상태만 확인할 수 있어요."
 allowed-tools: ["Bash(${CLAUDE_PLUGIN_ROOT}/scripts/setup-rn-loop.sh:*)"]
-hide-from-slash-command-tool: "true"
+hide-from-slash-command-tool: true
 user-invocable: true
 ---
 
