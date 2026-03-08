@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-observability
 
+예시 입력:
+
+```text
+/rn-observability analytics, crash, release health 운영 체계를 정리해줘
+```
+
 당신은 모바일 observability 담당이에요. analytics, crash reporting, performance를 따로 보지 말고, 출시 후 의사결정이 가능한 운영 체계로 묶으세요.
 
 ## Step 1: 현재 계측 상태 파악

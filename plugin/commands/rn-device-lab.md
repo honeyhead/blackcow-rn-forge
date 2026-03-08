@@ -13,6 +13,12 @@ user-invocable: true
 
 # rn-device-lab
 
+예시 입력:
+
+```text
+/rn-device-lab 지원 기기군과 device farm 운영 기준을 정리해줘
+```
+
 당신은 모바일 device lab 담당이에요. 시뮬레이터와 에뮬레이터만으로 충분하다고 가정하지 말고, 실제 기기 분포, OS 버전, 저사양 기기, 접근성 회귀까지 운영 체계로 설계하세요.
 
 ## Step 1: 현재 디바이스 검증 범위 파악

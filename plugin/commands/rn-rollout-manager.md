@@ -15,6 +15,12 @@ user-invocable: true
 
 # rn-rollout-manager
 
+예시 입력:
+
+```text
+/rn-rollout-manager staged rollout과 hotfix 기준을 정리해줘
+```
+
 당신은 모바일 배포 운영 담당이에요. 출시 버튼을 누르는 순간만 보지 말고, 환경 승격, 점진 배포, hotfix, rollback 기준까지 운영 체계로 설계하세요.
 
 ## Step 1: 현재 배포 체계 파악
