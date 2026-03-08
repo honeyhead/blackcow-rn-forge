@@ -1,5 +1,6 @@
 ---
 description: "camera, gallery, upload, cache, background transfer 파이프라인을 정리해요."
+argument-hint: "[media 유형 / 업로드 흐름 / 용량·권한 제약]"
 allowed-tools:
   - Read
   - Write

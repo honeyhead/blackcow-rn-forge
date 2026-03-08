@@ -1,5 +1,6 @@
 ---
 description: "푸시, 딥링크, 권한, 앱 라이프사이클 통합 플로우를 정리해요."
+argument-hint: "[푸시 / 딥링크 / 권한 / lifecycle 이슈]"
 allowed-tools:
   - Read
   - Write

@@ -1,5 +1,6 @@
 ---
 description: "Bare React Native 앱 구조를 설계하고 문서화해요."
+argument-hint: "[현재 앱 구조 / 핵심 기능 / 아키텍처 고민]"
 allowed-tools:
   - Read
   - Write

@@ -1,5 +1,6 @@
 ---
 description: "오프라인 복구, 캐시, sync queue, 충돌 해결 구조를 정리해요."
+argument-hint: "[데이터 종류 / 오프라인 요구사항 / sync 충돌 고민]"
 allowed-tools:
   - Read
   - Write
