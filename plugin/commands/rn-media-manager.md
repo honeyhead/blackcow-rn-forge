@@ -27,6 +27,8 @@ user-invocable: true
 - `docs/data/offline-strategy.md`
 - `docs/mobile-architecture.md`
 
+이때는 `Glob`으로 media / upload / storage 관련 구조를 보고, `Read`와 `Grep`으로 현재 permission, compression, retry, cache, signed URL 패턴을 먼저 확인해요.
+
 ## Step 2: 미디어 파이프라인 분리
 
 반드시 아래를 구분해요:
@@ -70,6 +72,8 @@ user-invocable: true
 - `docs/media/media-pipeline.md`
 - `docs/media/upload-recovery.md`
 - `docs/media/asset-policy.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 media 문서를 읽고, 유지할 정책과 바뀐 파이프라인 규칙만 갱신해요.
 
 ## Step 6: 결과 요약
 

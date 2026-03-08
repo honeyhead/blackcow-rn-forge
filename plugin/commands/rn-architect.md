@@ -24,6 +24,8 @@ user-invocable: true
 - `src/` 또는 `app/`
 - 상태관리, 네비게이션, API 클라이언트 파일
 
+이때는 `Glob`으로 현재 구조를 먼저 보고, `Read`와 `Grep`으로 navigation, state, env, analytics, feature flag 진입점을 먼저 확인해요.
+
 ## Step 2: 핵심 아키텍처 축 점검
 
 반드시 아래 항목을 다뤄요:
@@ -61,6 +63,8 @@ user-invocable: true
 ```
 
 ## Step 4: 의사결정 기준
+
+이미 `docs/mobile-architecture.md`가 있으면 새 파일을 하나 더 만들기보다 기존 문서를 읽고, 유지할 결정과 바뀐 구조만 갱신해요.
 
 선택 이유를 추상적으로 쓰지 말고 아래 기준으로 설명해요:
 
