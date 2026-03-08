@@ -26,6 +26,8 @@ user-invocable: true
 
 없으면 현재 정보를 기준으로 새로 정리해요.
 
+이때는 `Glob`으로 growth / release 관련 문서 구조를 보고, `Read`와 `Grep`으로 현재 positioning, keyword, screenshot message, review note 표현을 먼저 확인해요.
+
 ## Step 2: 스토어 메타데이터 작성
 
 반드시 아래를 작성해요:
@@ -66,6 +68,8 @@ user-invocable: true
 
 - `docs/release/store-metadata.md`
 - `docs/release/screenshot-brief.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 store 문서를 읽고, 유지할 포지셔닝과 바뀐 메시지만 갱신해요.
 
 ## Step 6: 결과 요약
 

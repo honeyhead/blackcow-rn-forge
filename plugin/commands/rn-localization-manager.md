@@ -26,6 +26,8 @@ user-invocable: true
 - 앱 화면 카피, notification copy, onboarding copy 관련 코드
 - 지원 언어 / 타겟 국가 문서가 있으면 같이 읽어요
 
+이때는 `Glob`으로 localization / store / copy 관련 구조를 보고, `Read`와 `Grep`으로 현재 locale, copy source, store metadata, notification 문구를 먼저 확인해요.
+
 ## Step 2: 현지화 레이어 분리
 
 반드시 아래를 구분해요:
@@ -68,6 +70,8 @@ user-invocable: true
 - `docs/localization/locale-plan.md`
 - `docs/localization/i18n-glossary.md`
 - `docs/release/store-localization.md`
+
+이미 같은 문서가 있으면 새 파일을 하나 더 만들기보다 기존 localization 문서를 읽고, 유지할 용어와 바뀐 locale 우선순위만 갱신해요.
 
 ## Step 6: 결과 요약
 
