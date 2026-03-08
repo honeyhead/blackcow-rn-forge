@@ -1,6 +1,6 @@
 {
   "name": "blackcow-rn-forge",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Claude Code plugin for Bare React Native architecture, team orchestration, guided loop workflows, accessibility, privacy, offline sync, release, growth, and operations.",
   "author": {
     "name": "Codex"
