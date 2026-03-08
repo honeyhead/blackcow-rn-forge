@@ -185,6 +185,7 @@ Bare React Native 앱을 기획하고, 구조를 잡고, 출시하고, 운영하
 이럴 때 좋습니다:
 - 혼자 순서를 잡기 어려울 때
 - 큰 작업을 여러 단계로 끝까지 밀고 싶을 때
+- `/rn-team-status`로 충돌 위험과 blocker를 중간중간 확인하고 싶을 때
 
 ### Starter Kit이 꼭 필요한가요?
 
@@ -283,10 +284,27 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 
 프롬프트 하나를 던지고 완료 조건까지 반복 작업을 시킵니다.
 
+- 진행 중 상태만 보려면 `--status`
+- active 또는 중단된 inactive 루프를 이어가려면 `--resume`
+- 루프를 멈추려면 `/rn-cancel-loop`
+- active 루프는 새 실행으로 조용히 덮어쓰지 않습니다
+
 예시:
 
 ```bash
 /rn-loop 로그인부터 출시 준비까지 필요한 문서와 구조를 정리해줘 --completion-promise '출시 준비 완료'
+```
+
+상태만 확인하려면:
+
+```text
+/rn-loop --status
+```
+
+기존 active 루프나 훅 오류로 멈춘 inactive 루프를 이어가려면:
+
+```text
+/rn-loop --resume 다음 작업
 ```
 
 짧게 시작하려면:
@@ -302,7 +320,7 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 | 커맨드 | 역할 | 설명 |
 |--------|------|------|
 | `/rn-planner` | 모바일 기획자 | 앱 아이디어를 모바일 PRD로 정리 |
-| `/rn-bootstrap` | 부트스트래퍼 | Bare React Native 프로젝트 초기 구성 |
+| `/rn-bootstrap` | 부트스트래퍼 | 새 Bare React Native 프로젝트 생성 또는 기존 구조 보강 |
 | `/rn-architect` | 아키텍트 | 네비게이션, 상태, 오프라인, 배포 구조 설계 |
 | `/rn-designer` | 모바일 디자이너 | 디자인 시스템, 화면 패턴, 컴포넌트 구축 |
 
@@ -351,9 +369,9 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 
 | 커맨드 | 역할 | 설명 |
 |--------|------|------|
-| `/rn-team` | 팀 리더 | 멀티 에이전트 병렬 작업 |
-| `/rn-team-status` | 팀 리더 비서 | 팀 상태 확인 |
-| `/rn-loop` | 반복 실행기 | 완료 조건까지 반복 작업 |
+| `/rn-team` | 팀 리더 | 멀티 에이전트 병렬 작업과 owner 분리 |
+| `/rn-team-status` | 팀 리더 비서 | 팀 상태, 충돌 위험, blocker 확인 |
+| `/rn-loop` | 반복 실행기 | 상태 확인, 반복 실행, 재개 |
 | `/rn-cancel-loop` | 루프 제어 | 실행 중인 루프 중단 |
 
 ### 결과물은 어디에 쌓이나요?
@@ -426,6 +444,8 @@ Bare React Native 프로젝트의 기본 구조를 잡습니다.
 ### 큰 작업을 한 번에 맡기고 싶어요
 
 `/rn-loop`를 먼저 써보세요.
+
+진행 중 상태는 `/rn-loop --status` 로 보고, 이어가려면 `--resume`, 멈추려면 `/rn-cancel-loop` 를 쓰면 됩니다.
 
 예:
 
