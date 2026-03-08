@@ -6,6 +6,7 @@ allowed-tools:
   - Edit
   - Glob
   - Grep
+  - AskUserQuestion
   - WebSearch
   - WebFetch
 user-invocable: true
@@ -25,6 +26,8 @@ user-invocable: true
 - 앱 소개 문서, PRD, 핵심 화면 정보
 
 없으면 현재 정보를 기준으로 새로 정리해요.
+
+핵심 포지셔닝이나 타겟 국가 정보가 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 외부 맥락이 더 필요할 때만 WebSearch/WebFetch로 경쟁 앱과 스토어 표현을 보강해요.
 
 이때는 `Glob`으로 growth / release 관련 문서 구조를 보고, `Read`와 `Grep`으로 현재 positioning, keyword, screenshot message, review note 표현을 먼저 확인해요.
 

@@ -37,6 +37,8 @@ user-invocable: true
 - 유입 채널이 있으면 무엇인지
 - 핵심 activation event가 무엇인지
 
+핵심 입력이 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 외부 맥락이 더 필요할 때만 WebSearch/WebFetch로 경쟁 앱과 시장 정보를 보강해요.
+
 ## Step 0: 컨텍스트 파일 준비
 
 `app-marketing-context.md`가 있으면 먼저 읽어요.

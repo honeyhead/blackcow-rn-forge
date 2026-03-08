@@ -6,6 +6,7 @@ allowed-tools:
   - Edit
   - Glob
   - Grep
+  - AskUserQuestion
   - WebSearch
   - WebFetch
 user-invocable: true
@@ -25,6 +26,8 @@ user-invocable: true
 - `docs/observability/analytics-map.md`
 
 없으면 현재 입력을 기준으로 새로 작성해요.
+
+핵심 입력이 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 외부 맥락이 더 필요할 때만 WebSearch/WebFetch로 시장/메시지 참고 자료를 보강해요.
 
 이때는 `Glob`으로 growth / engagement / analytics 관련 구조를 보고, `Read`와 `Grep`으로 현재 trigger, push copy, referral, paywall revisit 이벤트를 먼저 확인해요.
 

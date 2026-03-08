@@ -26,6 +26,8 @@ user-invocable: true
 - 핵심 타겟 사용자
 - 수익화 방식이 있으면 한 줄
 
+핵심 입력이 비어 있으면 `AskUserQuestion`으로 먼저 확인하고, 그다음 부족한 시장 정보만 WebSearch로 보강해요.
+
 정보가 부족하면 WebSearch로 경쟁 앱과 시장을 보강해요.
 
 ## Step 2: 모바일 PRD 생성
