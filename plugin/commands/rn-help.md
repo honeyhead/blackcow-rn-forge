@@ -5,6 +5,7 @@ allowed-tools:
   - Read
   - Glob
   - Grep
+  - AskUserQuestion
 user-invocable: true
 ---
 
@@ -32,6 +33,12 @@ user-invocable: true
 
 입력이 애매하면 현재 워크스페이스를 가볍게 읽고 판단해요. 예를 들어 `ios/`, `android/`, `src/`, `docs/`, release 관련 문서가 보이면 그 근거를 1~2줄로 같이 적어요.
 
+새 앱이거나 빠른 출시 트랙을 추천할 가능성이 있으면 시작 커맨드를 추천하기 전에 아래를 딱 한 번만 확인해요:
+
+- `이 앱은 광고/결제 같은 수익화가 핵심인가요, 아니면 계산기 같은 유틸리티 앱인가요?`
+
+수익화 여부가 이미 분명하면 다시 묻지 말고 바로 진행해요.
+
 ## Step 2: 시작 커맨드 추천
 
 반드시 아래 형식으로 답해요:
@@ -52,6 +59,10 @@ user-invocable: true
 - 운영 단계: `/rn-growth-manager` -> `/rn-rating-manager` -> `/rn-support-ops`
 - 빨리 하나 출시: `/rn-yolo-plan` -> `/rn-yolo-build` -> 필요시 `/rn-loop`
 - 큰 작업: `/rn-team` -> `/rn-team-status` -> `/rn-loop`
+
+위 질문의 답이 유틸리티 앱이면 광고/과금/성장 커맨드를 기본 추천으로 밀지 말고, `/rn-planner` -> `/rn-bootstrap` -> `/rn-architect` 또는 `/rn-workflow` 중심의 경량 흐름으로 안내해요.
+
+위 질문의 답이 수익화 앱이면 지금 YOLO fast track을 그대로 써요.
 
 사용자가 정말 어디서 시작해야 할지 모르겠다고 하면 아래 다섯 개를 먼저 보여줘요:
 
@@ -104,6 +115,11 @@ user-invocable: true
 - `/rn-yolo-plan`: refs 기반으로 뭘 만들지 빨리 확정
 - `/rn-yolo-build`: 현재 프로젝트를 기본값으로 바로 구현 시작
 - 한 번에 안 끝나면 `/rn-loop`로 남은 작업만 이어가기
+
+유틸리티 앱으로 분기했을 때는 아래도 짧게 같이 밝혀요:
+
+- 이번 MVP에서는 광고 / 과금 / 부스터를 기본 범위에서 뺌
+- 계산기 같은 경량 앱이면 `/rn-planner` -> `/rn-bootstrap` -> `/rn-architect` 정도로도 시작 가능
 
 `/rn-help`와 `/rn-workflow`를 같이 언급할 때는 아래 차이를 짧게 밝혀요:
 
