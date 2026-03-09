@@ -2,6 +2,12 @@
 
 이 문서는 `blackcow-rn-forge`의 최근 플러그인 변경 사항을 간단히 정리합니다.
 
+## 0.8.0
+
+- `/rn-yolo-plan`과 `/rn-yolo-build`를 추가해 refs 기반 빠른 기획과 현재 워크스페이스 기반 빠른 실행을 YOLO 모드로 나눠 쓸 수 있게 했습니다.
+- `rn-yolo-build`는 slug를 강제하지 않고 현재 프로젝트와 최신 yolo brief/PRD를 기본값으로 삼도록 UX 방향을 문서에 반영했습니다.
+- `README.md`, `plugin/commands/README.md`, `plugin/.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`을 갱신해 YOLO 모드 진입 흐름과 버전 `0.8.0`을 맞췄습니다.
+
 ## 0.7.0
 
 - `/rn-workflow`를 추가해 Bare React Native 앱의 기획 -> 구조 설계 -> 출시 준비 -> 운영 흐름을 command 중심 로드맵으로 바로 정리할 수 있게 했습니다.

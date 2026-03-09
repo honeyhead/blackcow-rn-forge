@@ -50,6 +50,7 @@ user-invocable: true
 - 기존 앱: `/rn-architect` -> `/rn-ui-upgrade` -> `/rn-security-guard`
 - 출시 직전: `/rn-test-lab` -> `/rn-device-lab` -> `/rn-release-manager`
 - 운영 단계: `/rn-growth-manager` -> `/rn-rating-manager` -> `/rn-support-ops`
+- 빨리 하나 출시: `/rn-yolo-plan` -> `/rn-yolo-build`
 - 큰 작업: `/rn-team` -> `/rn-team-status` -> `/rn-loop`
 
 사용자가 정말 어디서 시작해야 할지 모르겠다고 하면 아래 다섯 개를 먼저 보여줘요:
@@ -68,6 +69,7 @@ user-invocable: true
 
 - Start Here: `/rn-help`, `/rn-workflow`
 - Build / Product: `/rn-planner`, `/rn-bootstrap`, `/rn-architect`, `/rn-designer`
+- Fast Track: `/rn-yolo-plan`, `/rn-yolo-build`
 - Quality / Compliance: `/rn-ui-upgrade`, `/rn-accessibility-guard`, `/rn-security-guard`, `/rn-privacy-manager`
 - Core Flows / Platform: `/rn-auth-manager`, `/rn-billing-manager`, `/rn-platform-manager`, `/rn-offline-manager`, `/rn-media-manager`
 - Growth / Store / Operations: `/rn-growth-manager`, `/rn-localization-manager`, `/rn-store-manager`, `/rn-engagement-manager`, `/rn-rating-manager`, `/rn-support-ops`, `/rn-incident-manager`

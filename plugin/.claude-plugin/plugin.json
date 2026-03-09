@@ -1,7 +1,7 @@
 {
   "name": "blackcow-rn-forge",
-  "version": "0.7.0",
-  "description": "Claude Code plugin for command-centric Bare React Native planning, architecture, release, growth, support, and operations workflows.",
+  "version": "0.8.0",
+  "description": "Claude Code plugin for command-centric Bare React Native planning, yolo build flows, architecture, release, growth, support, and operations workflows.",
   "author": {
     "name": "honeyhead"
   },
@@ -20,6 +20,8 @@
     "team-orchestration",
     "loop-workflow",
     "command-workflow",
+    "yolo-mode",
+    "rapid-build",
     "release-ops",
     "qa-ops",
     "ratings",

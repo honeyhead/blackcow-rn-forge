@@ -59,6 +59,7 @@ user-invocable: true
 기본 흐름 기준은 아래를 사용해요:
 
 - 기획: `/rn-help` -> `/rn-planner`
+- 빠른 출시 트랙: `/rn-yolo-plan` -> `/rn-yolo-build`
 - 구조 설계: `/rn-bootstrap` -> `/rn-architect` -> 필요시 `/rn-designer`
 - 핵심 플로우 보강: `/rn-auth-manager`, `/rn-platform-manager`, `/rn-offline-manager`, `/rn-media-manager`, `/rn-security-guard`, `/rn-privacy-manager`
 - 출시 준비: `/rn-test-lab` -> `/rn-device-lab` -> `/rn-observability` -> `/rn-rollout-manager` -> `/rn-release-manager`
@@ -75,6 +76,7 @@ user-invocable: true
 - 출시 준비에는 `/rn-release-manager` 하나로 끝내지 말고 QA, device, observability, rollout 연결까지 보여줘요.
 - 운영 단계에는 growth만 넣지 말고 rating/support/incident 연결까지 보여줘요.
 - 큰 작업이면 `/rn-team`과 `/rn-loop`를 어느 시점에 붙일지 같이 적어요.
+- 사용자가 속도와 출시 우선을 분명히 말하면 `/rn-yolo-plan`과 `/rn-yolo-build`를 먼저 제안해요.
 
 ## Step 4: 최종 출력 형식
 

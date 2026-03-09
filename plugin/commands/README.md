@@ -1,6 +1,6 @@
 # Command Index
 
-이 디렉터리는 `blackcow-rn-forge`의 사용자 진입점 slash command 32개를 담습니다.
+이 디렉터리는 `blackcow-rn-forge`의 사용자 진입점 slash command 33개를 담습니다.
 
 ## Start Here
 
@@ -9,6 +9,8 @@
 
 ## Build / Product
 
+- `/rn-yolo-plan` - 레퍼런스 기반 빠른 앱 계획 확정 (`rn-yolo-plan.md`)
+- `/rn-yolo-build` - 현재 워크스페이스에서 pre-ops readiness까지 빠르게 실행 (`rn-yolo-build.md`)
 - `/rn-planner` - 앱 아이디어를 PRD로 정리 (`rn-planner.md`)
 - `/rn-bootstrap` - Bare React Native 초기 구조를 잡기 시작 (`rn-bootstrap.md`)
 - `/rn-architect` - 앱 구조와 기술 결정을 설계 (`rn-architect.md`)

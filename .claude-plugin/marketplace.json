@@ -4,14 +4,14 @@
     "name": "honeyhead"
   },
   "metadata": {
-    "description": "Claude Code plugin for command-centric Bare React Native planning, architecture, release, and operations"
+    "description": "Claude Code plugin for command-centric Bare React Native planning, yolo build flows, release, and operations"
   },
   "plugins": [
     {
       "name": "blackcow-rn-forge",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "source": "./plugin",
-      "description": "Claude Code plugin for command-centric Bare React Native planning, architecture, accessibility, release, rollout, support, and growth operations"
+      "description": "Claude Code plugin for command-centric Bare React Native planning, yolo build flows, architecture, release, rollout, support, and growth operations"
     }
   ]
 }
