@@ -45,6 +45,7 @@ Bare React Native 앱을 Claude Code 안에서 기획하고, 구조를 설계하
 ```text
 /rn-help 기존 앱인데 어디서부터 정리해야 할지 모르겠어
 /rn-yolo-plan https://ref1 https://ref2 "광고/부스터 중심 방치형 리워드 앱"
+/rn-yolo-plan https://ref1 https://ref2 "광고 없이 바로 쓰는 계산기 유틸리티 앱"
 /rn-yolo-build
 /rn-workflow 습관 앱 아이디어가 있는데 기획 -> 구조 설계 -> 출시 준비 -> 운영까지 어떤 command 순서로 진행하면 되는지 정리해줘
 /rn-planner 습관 기록과 친구 초대 기능이 있는 금연 앱
@@ -82,8 +83,11 @@ Bare React Native 앱을 Claude Code 안에서 기획하고, 구조를 설계하
 
 레퍼런스를 던지고 빨리 출시 가능한 앱 하나를 정한 뒤, 현재 프로젝트에서 바로 구현까지 밀고 싶다면 이 두 개를 기본 트랙으로 쓰면 됩니다.
 
+처음에는 딱 한 번 수익화 앱인지 유틸리티 앱인지 확인하고 그에 맞춰 범위를 잡습니다.
+
 ```text
 /rn-yolo-plan https://ref1 https://ref2 "방치형으로 금을 캐고 일정 시간마다 광고를 봐야 채굴이 이어지고, 광고/유료 부스터로 속도를 높이는 방치형 리워드 앱"
+/rn-yolo-plan https://ref1 https://ref2 "광고 없이 바로 쓰는 계산기 유틸리티 앱"
 /rn-yolo-build
 /rn-loop 부족한 문서와 QA 정리를 이어서 진행해줘 --completion-promise 'pre-ops readiness 완료'
 ```
