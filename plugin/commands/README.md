@@ -9,8 +9,8 @@
 
 ## Build / Product
 
-- `/rn-yolo-plan` - 레퍼런스 기반 빠른 앱 계획 확정 (`rn-yolo-plan.md`)
-- `/rn-yolo-build` - 현재 워크스페이스에서 pre-ops readiness까지 빠르게 실행 (`rn-yolo-build.md`)
+- `/rn-yolo-plan` - refs 기반으로 뭘 만들지 빠르게 확정 (`rn-yolo-plan.md`)
+- `/rn-yolo-build` - 현재 워크스페이스를 기본값으로 pre-ops readiness까지 빠르게 실행 (`rn-yolo-build.md`)
 - `/rn-planner` - 앱 아이디어를 PRD로 정리 (`rn-planner.md`)
 - `/rn-bootstrap` - Bare React Native 초기 구조를 잡기 시작 (`rn-bootstrap.md`)
 - `/rn-architect` - 앱 구조와 기술 결정을 설계 (`rn-architect.md`)
@@ -53,7 +53,7 @@
 
 - `/rn-team` - 큰 모바일 작업을 병렬 팀으로 나눠 운영 (`rn-team.md`)
 - `/rn-team-status` - blocker, 충돌 위험, 다음 액션 확인 (`rn-team-status.md`)
-- `/rn-loop` - 완료 조건까지 반복 실행 (`rn-loop.md`)
+- `/rn-loop` - 한 번에 안 끝난 작업만 완료 조건까지 반복 실행 (`rn-loop.md`)
 - `/rn-cancel-loop` - 실행 중인 RN 루프 중단 (`rn-cancel-loop.md`)
 
 루프 관련 실제 스크립트는 `../scripts/setup-rn-loop.sh`, `../hooks/stop-hook.sh` 에 있습니다.

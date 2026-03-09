@@ -4,9 +4,9 @@
 
 ## 0.8.0
 
-- `/rn-yolo-plan`과 `/rn-yolo-build`를 추가해 refs 기반 빠른 기획과 현재 워크스페이스 기반 빠른 실행을 YOLO 모드로 나눠 쓸 수 있게 했습니다.
+- `/rn-yolo-plan` -> `/rn-yolo-build`를 YOLO 기본 고속 트랙으로 정리하고, 한 번에 안 끝나는 작업만 `/rn-loop`로 넘기는 흐름을 문서에 반영했습니다.
 - `rn-yolo-build`는 slug를 강제하지 않고 현재 프로젝트와 최신 yolo brief/PRD를 기본값으로 삼도록 UX 방향을 문서에 반영했습니다.
-- `README.md`, `plugin/commands/README.md`, `plugin/.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`을 갱신해 YOLO 모드 진입 흐름과 버전 `0.8.0`을 맞췄습니다.
+- `README.md`, `plugin/commands/README.md`, `plugin/commands/rn-help.md`, `plugin/commands/rn-workflow.md`를 갱신해 YOLO 2-command 트랙과 optional `/rn-loop` handoff를 같은 톤으로 맞췄습니다.
 
 ## 0.7.0
 
