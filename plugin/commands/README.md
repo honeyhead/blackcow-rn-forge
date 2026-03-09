@@ -1,10 +1,11 @@
 # Command Index
 
-이 디렉터리는 `blackcow-rn-forge`의 사용자 진입점 slash command 30개를 담습니다.
+이 디렉터리는 `blackcow-rn-forge`의 사용자 진입점 slash command 32개를 담습니다.
 
 ## Start Here
 
 - `/rn-help` - 지금 상황에 맞는 시작 커맨드와 다음 순서 추천 (`rn-help.md`)
+- `/rn-workflow` - 기획부터 운영까지 단계형 command 흐름 설계 (`rn-workflow.md`)
 
 ## Build / Product
 

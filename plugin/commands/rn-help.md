@@ -41,8 +41,11 @@ user-invocable: true
 3. 바로 복붙 가능한 예시 입력
 4. 그다음 이어서 쓸 커맨드 2~3개
 
+사용자가 "기획부터 출시 운영까지 전체 흐름", "라이프사이클", "end-to-end command 순서"를 원하면 시작 커맨드에 `/rn-workflow`를 포함해요.
+
 상황별 기본 추천은 아래를 기준으로 잡아요:
 
+- 전체 흐름: `/rn-workflow` -> 단계별 하위 command 실행
 - 새 앱: `/rn-planner` -> `/rn-bootstrap` -> `/rn-architect`
 - 기존 앱: `/rn-architect` -> `/rn-ui-upgrade` -> `/rn-security-guard`
 - 출시 직전: `/rn-test-lab` -> `/rn-device-lab` -> `/rn-release-manager`
@@ -52,18 +55,18 @@ user-invocable: true
 사용자가 정말 어디서 시작해야 할지 모르겠다고 하면 아래 다섯 개를 먼저 보여줘요:
 
 ```text
+/rn-workflow
 /rn-planner
 /rn-bootstrap
 /rn-architect
 /rn-release-manager
-/rn-loop
 ```
 
 ## Step 3: 커맨드 맵과 특수 안내
 
 필요하면 카테고리별 커맨드도 짧게 묶어줘요:
 
-- Start Here: `/rn-help`
+- Start Here: `/rn-help`, `/rn-workflow`
 - Build / Product: `/rn-planner`, `/rn-bootstrap`, `/rn-architect`, `/rn-designer`
 - Quality / Compliance: `/rn-ui-upgrade`, `/rn-accessibility-guard`, `/rn-security-guard`, `/rn-privacy-manager`
 - Core Flows / Platform: `/rn-auth-manager`, `/rn-billing-manager`, `/rn-platform-manager`, `/rn-offline-manager`, `/rn-media-manager`
@@ -93,3 +96,8 @@ user-invocable: true
 - 예시 입력
 - 다음 커맨드
 - 주의할 점 1개
+
+`/rn-help`와 `/rn-workflow`를 같이 언급할 때는 아래 차이를 짧게 밝혀요:
+
+- `/rn-help`: 지금 당장 어디서 시작할지 추천
+- `/rn-workflow`: 기획부터 운영까지 전체 단계형 로드맵 정리

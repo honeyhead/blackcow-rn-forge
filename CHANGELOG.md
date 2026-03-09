@@ -2,6 +2,12 @@
 
 이 문서는 `blackcow-rn-forge`의 최근 플러그인 변경 사항을 간단히 정리합니다.
 
+## 0.7.0
+
+- `/rn-workflow`를 추가해 Bare React Native 앱의 기획 -> 구조 설계 -> 출시 준비 -> 운영 흐름을 command 중심 로드맵으로 바로 정리할 수 있게 했습니다.
+- `README.md`, `plugin/commands/README.md`, `plugin/commands/rn-help.md`를 갱신해 `/rn-help`는 시작점 추천, `/rn-workflow`는 전체 lifecycle 설계라는 역할 분리를 명확히 했습니다.
+- `plugin/.claude-plugin/plugin.json`과 `.claude-plugin/marketplace.json`의 설명과 버전을 command-centric workflow 포지셔닝에 맞춰 갱신했습니다.
+
 ## 0.6.9
 
 - `plugin/scripts/setup-rn-loop.sh`가 루프 시작/재개 시 completion promise를 즉시 출력하던 동작을 제거하고, 실제 완료 시점에만 `<promise>...</promise>` 계약이 유지되도록 맞췄습니다.
