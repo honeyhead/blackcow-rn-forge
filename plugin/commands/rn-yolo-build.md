@@ -37,6 +37,8 @@ user-invocable: true
 
 하나의 대상이 분명하면 바로 진행해요. 후보가 여러 개고 어떤 PRD를 써야 할지 명확하지 않을 때만 `AskUserQuestion`으로 짧게 한 번 물어요.
 
+`docs/yolo-build-brief.md`나 PRD에 `이번 MVP에서는 수익화 없음`이 보이면 유틸리티 앱으로 간주하고, billing/ads 축을 기본 구현 범위에서 빼요.
+
 아래 예외도 명확히 처리해요:
 
 - 현재 프로젝트도 없고 `docs/yolo-build-brief.md`나 PRD도 없으면 `/rn-yolo-plan`을 먼저 쓰라고 바로 안내
@@ -67,7 +69,7 @@ user-invocable: true
 1. plan/brief와 현재 구조 읽기
 2. 앱 셸과 구조 보강
 3. P0 화면과 핵심 플로우 구현
-4. 광고 / 부스터 / 과금 / analytics 중 필수 축만 연결
+4. 수익화 앱이면 광고 / 부스터 / 과금 / analytics 중 필수 축만 연결하고, 유틸리티 앱이면 analytics 등 필요한 축만 남겨요.
 5. `docs/mobile-architecture.md` 갱신
 6. `docs/observability/`와 `docs/release/` 문서 최소 세트 작성
 7. 가능한 테스트, 빌드, 수동 QA 수행
@@ -91,10 +93,11 @@ user-invocable: true
 
 - 가장 빠른 출시 가능한 범위를 우선해요.
 - 품질이 조금 떨어져도 출시 가능한 MVP를 먼저 완성해요.
-- 하지만 빌드/런타임/핵심 과금/광고/로그인/크래시 리스크는 무시하지 말아요.
+- 하지만 빌드/런타임/로그인/크래시 리스크는 무시하지 말고, 수익화 앱이면 핵심 과금/광고 리스크도 같이 챙겨요.
 - 지금 당장 안 필요한 고급 추상화는 만들지 말아요.
 - 현재 워크스페이스를 기본값으로 삼고, slug 없이 진행해요.
 - 현재 프로젝트가 비어 있고 plan도 없으면 `/rn-yolo-plan`을 먼저 쓰라고 안내해요.
+- 유틸리티 앱이면 billing / ads 연결을 억지로 추가하지 말고, PRD와 brief에 적힌 경량 범위를 그대로 따라가요.
 
 ## Step 6: 종료 조건
 
