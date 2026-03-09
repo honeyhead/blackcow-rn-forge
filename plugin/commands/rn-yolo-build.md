@@ -33,9 +33,15 @@ user-invocable: true
 1. 사용자가 명시적으로 한 줄 힌트를 주면 우선 사용
 2. 현재 워크스페이스의 `package.json`, `ios/`, `android/`, `src/`, `app/` 확인
 3. `docs/yolo-build-brief.md` 읽기
-4. `docs/mobile-prd/*.md` 중 가장 최근이거나 현재 프로젝트와 맞는 PRD 읽기
+4. `docs/mobile-prd/*.md` 중 현재 프로젝트와 분명히 맞는 PRD가 있으면 그 문서를 읽고, 그렇지 않을 때만 가장 최근 PRD 후보를 검토
 
 하나의 대상이 분명하면 바로 진행해요. 후보가 여러 개고 어떤 PRD를 써야 할지 명확하지 않을 때만 `AskUserQuestion`으로 짧게 한 번 물어요.
+
+아래 예외도 명확히 처리해요:
+
+- 현재 프로젝트도 없고 `docs/yolo-build-brief.md`나 PRD도 없으면 `/rn-yolo-plan`을 먼저 쓰라고 바로 안내
+- PRD가 여러 개면 가장 최근 문서를 임의로 고정하지 말고 1회만 짧게 물어보기
+- 현재 워크스페이스에 이미 구현이 진행 중이면 덮어쓰기보다 이어서 보강하기
 
 ## Step 2: 작업 범위
 
@@ -108,3 +114,8 @@ user-invocable: true
 - 지금 출시를 막는 blocker 3개
 - 직접 확인한 빌드 / 테스트 / 수동 QA 결과
 - 다음 액션 3개
+
+필요하면 마지막 줄에 아래 중 하나를 붙여요:
+
+- `다음 권장 커맨드: /rn-loop ...`
+- `다음 권장 커맨드: /rn-release-manager ...`
