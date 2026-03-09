@@ -1,6 +1,6 @@
 # Skill Index
 
-이 디렉터리는 command/agent가 함께 참고하는 mobile playbook 성격의 skill 23개를 담습니다.
+이 디렉터리는 command/agent가 함께 참고하는 mobile playbook 성격의 skill 24개를 담습니다.
 
 - `blackcow-rn-architecture/SKILL.md` - Bare React Native 아키텍처 기준
 - `blackcow-rn-ui/SKILL.md` - React Native UI와 화면 설계 기준
@@ -11,6 +11,7 @@
 - `blackcow-rn-data/SKILL.md` - 모바일 데이터 계층과 backend 연계 기준
 - `blackcow-rn-media/SKILL.md` - 사진/동영상 업로드와 파이프라인 설계
 - `blackcow-rn-growth/SKILL.md` - ASO, 분석, 리텐션, 수익화 관점
+- `blackcow-rn-admob-rewarded/SKILL.md` - AdMob rewarded ad, SSV, ILR, UMP, policy gating 기준
 - `blackcow-rn-engagement/SKILL.md` - 푸시, referral, 재방문 루프 설계
 - `blackcow-rn-rating/SKILL.md` - review prompt와 rating recovery 운영
 - `blackcow-rn-support/SKILL.md` - support ops, refund, 리뷰 대응 기준
