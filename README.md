@@ -21,7 +21,7 @@ Bare React Native 앱을 Claude Code 안에서 기획하고, 구조를 설계하
 - 새 프로젝트뿐 아니라 이미 운영 중인 RN 프로젝트에도 바로 붙여서 쓸 수 있습니다.
 - 큰 작업은 `/rn-loop`, 병렬 작업은 `/rn-team` 계열로 밀어붙일 수 있습니다.
 - 전체 command 흐름이 필요하면 `/rn-workflow`가 기획부터 운영까지 단계를 연결해 줍니다.
-- YOLO 모드가 필요하면 `/rn-yolo-plan`과 `/rn-yolo-build`로 refs 기반 기획과 빠른 구현을 나눠서 밀 수 있습니다.
+- YOLO 모드가 필요하면 `/rn-yolo-plan` -> `/rn-yolo-build`를 기본 고속 트랙으로 쓰고, 길어질 때만 `/rn-loop`를 붙이면 됩니다.
 
 ---
 
@@ -67,7 +67,7 @@ Bare React Native 앱을 Claude Code 안에서 기획하고, 구조를 설계하
 
 | 상황 | 먼저 쓸 커맨드 | 기대 결과 |
 | --- | --- | --- |
-| 빨리 하나 출시하고 싶을 때 | `/rn-yolo-plan` -> `/rn-yolo-build` | refs 기반 빠른 기획, MVP 구현, pre-ops readiness |
+| 빨리 하나 출시하고 싶을 때 | `/rn-yolo-plan` -> `/rn-yolo-build` -> 필요시 `/rn-loop` | refs 기반 빠른 기획, 현재 프로젝트 기반 빠른 실행, 남은 작업 반복 |
 | 전체 흐름이 필요할 때 | `/rn-workflow` -> 각 단계별 command 실행 | 기획 -> 구조 -> 출시 -> 운영까지 이어지는 command 로드맵 |
 | 시작점이 막막할 때 | `/rn-help` -> `/rn-planner` 또는 `/rn-architect` | 현재 상황에 맞는 첫 커맨드와 다음 순서 |
 | 새 앱을 시작할 때 | `/rn-planner` -> `/rn-bootstrap` -> `/rn-architect` | PRD, 초기 구조, 아키텍처 문서 |
@@ -80,11 +80,12 @@ Bare React Native 앱을 Claude Code 안에서 기획하고, 구조를 설계하
 
 ## YOLO 모드
 
-레퍼런스를 던지고 빨리 출시 가능한 앱 하나를 정한 뒤, 현재 프로젝트에서 바로 구현까지 밀고 싶다면 이 두 개로 시작하면 됩니다.
+레퍼런스를 던지고 빨리 출시 가능한 앱 하나를 정한 뒤, 현재 프로젝트에서 바로 구현까지 밀고 싶다면 이 두 개를 기본 트랙으로 쓰면 됩니다.
 
 ```text
 /rn-yolo-plan https://ref1 https://ref2 "방치형으로 금을 캐고 일정 시간마다 광고를 봐야 채굴이 이어지고, 광고/유료 부스터로 속도를 높이는 방치형 리워드 앱"
 /rn-yolo-build
+/rn-loop 부족한 문서와 QA 정리를 이어서 진행해줘 --completion-promise 'pre-ops readiness 완료'
 ```
 
 | 커맨드 | 역할 | 기본값 |
@@ -98,6 +99,7 @@ YOLO 모드 기본 원칙은 아래와 같습니다.
 - growth / support / incident는 기본 범위에서 뺍니다.
 - observability / release / QA는 최소 세트만 챙깁니다.
 - `rn-yolo-build`는 slug를 강제하지 않고 현재 워크스페이스를 기본값으로 사용합니다.
+- 기본 흐름은 `/rn-yolo-plan` -> `/rn-yolo-build`이고, 한 번에 안 끝나는 작업만 `/rn-loop`로 넘깁니다.
 
 ---
 
